@@ -8,7 +8,6 @@ import SecaoFaq from "./components/Faq/SecaoFaq"
 import FaleConosco from "./components/FaleConosco/FaleConosco"
 import Footer from "./components/Footer/Footer"
 import SecaoParceiros from "./components/Parceiros/SecaoParceiros"
-import "./App.module.css"
 
 function App() {
 
