@@ -31,7 +31,7 @@ const Header = () => {
           <ul>
             <li>
               <a href="/" onClick={(e) => scrollToSection("erica", e)}>
-                Erica
+                Sobre
               </a>
             </li>
             <li>
