@@ -26,41 +26,26 @@ export default function SecaoFaq() {
 
   return (
     <section id="faq" className={style.secaoFaq}>
-      {/* Container centralizado */}
-      <div className={style.container}>
+      <div className={style.containerFaq}>
         <h2>Perguntas frequentes</h2>
 
-        <div className={style.perguntasContainer}>
+        <div className={style.menuFaq}>
           {perguntas.map((item, index) => (
             <button
               key={index}
               onClick={() => setIndiceAtivo(indiceAtivo === index ? null : index)}
               className={`${style.perguntaBtn} ${indiceAtivo === index ? style.ativo : ""}`}
-              aria-expanded={indiceAtivo === index}
-              aria-controls={`resposta-${index}`}
-              id={`pergunta-${index}`}
             >
               {item.pergunta}
             </button>
           ))}
         </div>
 
-        <div
-          className={style.respostaContainer}
-          style={{ height: indiceAtivo === null ? 0 : "auto" }}
-        >
-          {perguntas.map((item, index) => (
-            <div
-              key={index}
-              id={`resposta-${index}`}
-              role="region"
-              aria-labelledby={`pergunta-${index}`}
-              className={`${style.resposta} ${indiceAtivo === index ? style.mostrar : style.esconder}`}
-            >
-              {item.resposta}
-            </div>
-          ))}
-        </div>
+        {indiceAtivo !== null && (
+          <div className={style.respostaArea}>
+            <p>{perguntas[indiceAtivo].resposta}</p>
+          </div>
+        )}
       </div>
     </section>
   );
