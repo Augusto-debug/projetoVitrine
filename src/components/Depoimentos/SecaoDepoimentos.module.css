@@ -89,10 +89,15 @@
     background-size: 120px auto;
   }
 
-  .containerImagemDepoimentos>div:nth-child(1),
+  .containerImagemDepoimentos>div:nth-child(1) {
+    width: 100%;
+  }
+  
   .imagemConsultora {
     width: 100%;
-    max-height: 220px;
+    height: auto;
+    min-height: 300px;
+    max-height: 400px;
   }
 
   .containerImagemDepoimentos>div:nth-child(2) {
@@ -104,14 +109,18 @@
 /* Responsividade para mobile */
 @media (max-width: 480px) {
   .imagemConsultora {
-    max-height: 180px;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    max-height: 350px;
     border-radius: 12px;
+    object-fit: cover;
   }
 
   .containerImagemDepoimentos {
     gap: 20px;
     padding: 20px;
-    background-size: 100px auto;
+    height: auto;
   }
 
   .containerImagemDepoimentos>div:nth-child(2) {
