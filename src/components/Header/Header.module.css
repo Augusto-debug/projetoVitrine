@@ -162,12 +162,17 @@
 @media screen and (max-width: 600px) {
     .headerContainer {
         padding: 5px 15px;
+        justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    /* Ocultar botão "Seja um parceiro" no mobile */
+    .contactButtonWrapper {
+        display: none;
     }
 
     .menuToggle {
         display: flex;
-        order: 3;
     }
 
     .navHeader {
