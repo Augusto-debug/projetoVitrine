@@ -9,6 +9,7 @@
     max-width: 1200px;
     width: 100%;
     text-align: center;
+    padding: 0 16px;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
     cursor: pointer;
     transition: background 0.3s, border 0.3s;
     outline: none;
+    width: 100%;
 }
 
 .perguntaBtn:hover {
@@ -70,5 +72,45 @@ h2 {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .secaoFaq {
+        padding: 40px 12px;
+    }
+
+    .containerFaq {
+        padding: 0 8px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .perguntaBtn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .respostaArea {
+        padding: 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .perguntaBtn {
+        font-size: 0.95rem;
+    }
+
+    .respostaArea {
+        font-size: 0.95rem;
     }
 }

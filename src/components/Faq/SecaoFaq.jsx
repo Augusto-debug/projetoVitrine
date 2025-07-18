@@ -33,8 +33,11 @@ export default function SecaoFaq() {
           {perguntas.map((item, index) => (
             <button
               key={index}
-              onClick={() => setIndiceAtivo(indiceAtivo === index ? null : index)}
-              className={`${style.perguntaBtn} ${indiceAtivo === index ? style.ativo : ""}`}
+              onClick={() =>
+                setIndiceAtivo(indiceAtivo === index ? null : index)
+              }
+              className={`${style.perguntaBtn} ${indiceAtivo === index ? style.ativo : ""
+                }`}
             >
               {item.pergunta}
             </button>
@@ -43,7 +46,15 @@ export default function SecaoFaq() {
 
         {indiceAtivo !== null && (
           <div className={style.respostaArea}>
-            <p>{perguntas[indiceAtivo].resposta}</p>
+            {Array.isArray(perguntas[indiceAtivo].resposta) ? (
+              <ul>
+                {perguntas[indiceAtivo].resposta.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{perguntas[indiceAtivo].resposta}</p>
+            )}
           </div>
         )}
       </div>
