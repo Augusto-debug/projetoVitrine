@@ -11,7 +11,7 @@ const SecaoMetricas = () => {
       <div className={style.conteudoMetricas}>
 
         <h2>Alcance que Gera Valor</h2>
-        <p>Entenda </p>
+        <p>Entenda como a nossa audiência ativa e fiel potencializa a visibilidade das marcas que escolhem se conectar conosco</p>
 
         <div className={style.containerMetricas}>
           <div className={style.metricasTipoUm}>
