@@ -3,7 +3,7 @@ import style from './MetricasUmDefault.module.css';
 function MetricasUmDefault({ textoMetrica, numerosMetrica }) {
   return (
     <div className={style.metricaUnica}>
-      <p>{textoMetrica}</p>
+      <h3>{textoMetrica}</h3>
       <span>{numerosMetrica}</span>
     </div>
 

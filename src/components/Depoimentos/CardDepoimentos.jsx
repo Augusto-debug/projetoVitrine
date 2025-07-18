@@ -6,9 +6,10 @@ const CardDepoimentos = ({ depoimento, nome, avatar }) => {
     <div className={style.cardDepoimentos}>
       <div>
         <img src={avatar} alt={`Avatar de ${nome}`} className={style.avatarAutor} />
+        <h4>{nome}</h4>
+
       </div>
       <div>
-        <h4>{nome}</h4>
         <p>"{depoimento}"</p>
       </div>
 
