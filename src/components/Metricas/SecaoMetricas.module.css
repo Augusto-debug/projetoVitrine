@@ -125,12 +125,7 @@
     .containerMetricas>div {
         margin: 0;
     }
-    
-    .secaoMetricas::before {
-        width: 150px;
-        height: 150px;
-        top: -5%;
-    }
+
 }
 
 /* Responsividade para mobile */
@@ -163,9 +158,5 @@
         margin: 0;
     }
     
-    .secaoMetricas::before {
-        width: 100px;
-        height: 100px;
-        top: -3%;
-    }
+    
 }
