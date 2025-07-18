@@ -161,7 +161,9 @@
 
     .menuToggle {
         display: flex;
+        margin-right: 25px
     }
+
 
     .navHeader {
         order: 4;
