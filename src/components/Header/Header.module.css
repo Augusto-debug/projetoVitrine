@@ -1,7 +1,7 @@
 .headerContainer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 6px 24px;
+    padding: 4px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;

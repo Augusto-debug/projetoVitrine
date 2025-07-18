@@ -5,6 +5,7 @@
     width: 100%;
     box-sizing: border-box;
     text-align: left;
+    border: 1px solid black;
 }
 
 .contactContainer {

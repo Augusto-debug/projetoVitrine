@@ -1,8 +1,26 @@
 .faleConoscoSection {
+    position: relative;
+    /* Necessário para o ::before funcionar */
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 800px;
+    padding: 60px 20px;
+    background-image: url('/uberlandiaDia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.faleConoscoSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
 
 .topSection {
@@ -12,24 +30,9 @@
     align-items: center;
     height: 750px;
     padding: 0 20px;
-    background-image: url('/uberlandiaDia.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: white;
     text-align: center;
-    z-index: 0;
-}
-
-.topSection::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 0;
+    z-index: 1;
 }
 
 .topSection>div {
@@ -58,7 +61,6 @@
     text-align: left;
     align-items: center;
 }
-
 
 .contactForm h2 {
     margin-bottom: 10px;
@@ -152,6 +154,7 @@
     text-align: left;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .topSection {
         background-image: none;
@@ -160,7 +163,7 @@
         justify-content: center;
     }
 
-    .topSection::before {
+    .faleConoscoSection::before {
         display: none;
     }
 
