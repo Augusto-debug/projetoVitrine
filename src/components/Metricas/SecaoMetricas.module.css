@@ -1,6 +1,3 @@
-
-
-
 .secaoMetricas {
     position: relative;
     overflow: hidden;
@@ -38,10 +35,21 @@
     pointer-events: none;
 }
 
+.conteudoMetricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .containerMetricas {
     width: 100%;
-    position: relative;
     z-index: 2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .containerMetricas>div {
