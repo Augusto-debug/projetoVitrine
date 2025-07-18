@@ -3,7 +3,7 @@ import style from './Divulgacoes.module.css';
 
 const Parceiros = () => {
   return (
-    <section id='parcerias' className={style.partnersContainer}>
+    <section id='divulgacoes' className={style.partnersContainer}>
       <div className={style.partnersContent}>
         <div className={style.apresentacaoSecao}>
           <h2>Parcerias em Destaque</h2>
