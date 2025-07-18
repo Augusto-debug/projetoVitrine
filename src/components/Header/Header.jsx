@@ -8,7 +8,8 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId, e) => {
+    e.preventDefault();
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
@@ -29,27 +30,32 @@ const Header = () => {
         <nav className={`${styles.navHeader} ${isMenuOpen ? styles.active : ""}`}>
           <ul>
             <li>
-              <a href="#parcerias" onClick={() => scrollToSection("parcerias")}>
-                Divulgações
+              <a href="/" onClick={(e) => scrollToSection("erica", e)}>
+                Erica
               </a>
             </li>
             <li>
-              <a href="#metricas" onClick={() => scrollToSection("metricas")}>
+              <a href="/" onClick={(e) => scrollToSection("metricas", e)}>
                 Métricas
               </a>
             </li>
             <li>
-              <a href="#depoimentos" onClick={() => scrollToSection("depoimentos")}>
-                Depoimentos
+              <a href="/" onClick={(e) => scrollToSection("divulgacoes", e)}>
+                Divulgações
               </a>
             </li>
             <li>
-              <a href="#parceiros" onClick={() => scrollToSection("parceiros")}>
+              <a href="/" onClick={(e) => scrollToSection("parceiros", e)}>
                 Parcerias
               </a>
             </li>
             <li>
-              <a href="#faq" onClick={() => scrollToSection("faq")}>
+              <a href="/" onClick={(e) => scrollToSection("depoimentos", e)}>
+                Depoimentos
+              </a>
+            </li>
+            <li>
+              <a href="/" onClick={(e) => scrollToSection("faq", e)}>
                 Perguntas
               </a>
             </li>
@@ -58,8 +64,8 @@ const Header = () => {
 
         <div className={styles.contactButtonWrapper}>
           <a
-            href="#faleConosco"
-            onClick={() => scrollToSection("faleConosco")}
+            href="/"
+            onClick={(e) => scrollToSection("faleConosco", e)}
             className={`${styles.contactButton} btn-primary`}
           >
             Seja um parceiro!
