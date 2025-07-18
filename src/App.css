@@ -18,6 +18,30 @@ h4 {
     color: #6e1111;
 }
 
+.btn-primary {
+    background-color: #6e1111;
+    color: #FAFAFA;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(110, 17, 17, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+}
+
+.btn-primary:hover {
+    background-color: #007d23;
+    box-shadow: 0 6px 20px rgba(0, 125, 35, 0.4);
+    transform: translateY(-2px);
+}
+
 
 section:nth-child(even),
 header,
@@ -29,12 +53,6 @@ section:nth-child(odd) {
     background-color: #7D0000;
 }
 
-
-section>div,
-header div,
-footer div {
-    width: 1200px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid black;
+p {
+    text-align: justify;
 }

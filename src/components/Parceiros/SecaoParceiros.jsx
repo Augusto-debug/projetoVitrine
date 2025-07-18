@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./SecaoParceiros.module.css";
-import Apresentacao from "../Apresentacao";
 
 function SecaoParceiros() {
   const partners = [
@@ -13,23 +12,22 @@ function SecaoParceiros() {
   ];
 
   return (
-    <section id='parceiros' className={styles.secaoParceiros}>
+    <section id="parceiros" className={styles.secaoParceiros}>
       <div>
-        <Apresentacao
-          tituloSecao="Conheça nossos parceiros"
-          paragrafoSecao="Conheça as marcas que acreditaram no meu trabalho para construir uma presença forte no Instagram." />
-
+        <div className={styles.apresentacaoSecao}>
+          <h2>Conheça mais parcerias</h2>
+          <p>Conheça mais marcas que acreditaram no meu trabalho</p>
+        </div>
 
         <div className={styles.containerParceiros}>
           {partners.map((partner, index) => (
             <div key={index} className={styles.partnerItem}>
-              <a href={partner.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={partner.image}
-                  alt={partner.name}
-                />
-              </a>
-              <p>{partner.name}</p>
+              <div className={styles.partnerHighlightBox}>
+                <a href={partner.link} target="_blank" rel="noopener noreferrer">
+                  <img src={partner.image} alt={partner.name} />
+                </a>
+                <p>{partner.name}</p>
+              </div>
             </div>
           ))}
         </div>

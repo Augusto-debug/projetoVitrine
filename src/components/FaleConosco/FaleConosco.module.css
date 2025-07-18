@@ -2,30 +2,23 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 800px;
 }
 
-
-
 .topSection {
-    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    padding: 0 20px;
     background-image: url('/uberlandiaDia.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    filter: none;
-    -webkit-filter: none;
-
-    padding: 60px 20px 0;
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    min-height: 550px;
-    position: relative;
-    z-index: 20;
+    z-index: 0;
 }
 
 .topSection::before {
@@ -35,57 +28,58 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
 
-.topSection > div, .bottomSection > div{
-    width: 1200px;
-    margin: auto;
+.topSection>div {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding: 20px;
-    border: 1px solid green;
+    height: auto;
 }
 
 .contactForm {
-    width: 100%;
     max-width: 510px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
     background-color: #FAFAFA;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 25;
-    /* Removido o margin-bottom negativo aqui para que o formulário não se sobreponha por padrão */
-    margin-bottom: 0;
-    margin-right: 5%;
-    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     text-align: left;
     align-items: center;
 }
 
+
 .contactForm h2 {
     margin-bottom: 10px;
     color: #000000;
-    text-align: left;
     width: 100%;
+    text-align: left;
 }
 
 .contactForm p {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: 1.5;
     color: #334155;
-    text-align: left;
     width: 100%;
+    text-align: left;
 }
 
 .contactForm div {
     display: flex;
     flex-direction: column;
-    text-align: left;
     width: 100%;
+    text-align: left;
 }
 
 .contactForm label {
@@ -158,97 +152,11 @@
     text-align: left;
 }
 
-.bottomSection {
-    width: 100%;
-    background-color: #7D0000;
-    padding: 120px 20px 60px 20px;
-    color: white;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    z-index: 10;
-}
-
-
-
-.contactInfoWrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    width: 100%;
-    max-width: 900px;
-    margin-top: 0;
-    position: relative;
-    z-index: 1;
-    justify-items: start;
-    align-items: start;
-}
-
-.contactInfoWrapper>div {
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-}
-
-.contactInfoWrapper h4 {
-    margin-bottom: 10px;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.contactInfoWrapper h4 svg {
-    color: white;
-}
-
-.contactInfoWrapper p {
-    margin: 5px 0;
-    color: white;
-    text-align: left;
-    line-height: 1.5;
-}
-
-.bottomSection a {
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.bottomSection a:hover {
-    color: #DDDDDD;
-    text-decoration: underline;
-}
-
-.contactItem {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: left;
-    width: 100%;
-}
-
 @media (max-width: 768px) {
     .topSection {
         background-image: none;
         background-color: #FFFFFF;
-        min-height: auto;
-        padding-top: 80px;
-        padding-bottom: 80px;
         padding: 40px 15px;
-        align-items: center;
         justify-content: center;
     }
 
@@ -256,53 +164,23 @@
         display: none;
     }
 
-    .contactForm h2,
-    .contactForm p {
-        text-align: center;
-        padding-right: 0;
-        margin-bottom: 15px;
+    .topSection>div {
+        justify-content: center;
+        padding: 0;
     }
 
     .contactForm {
         max-width: 90%;
-        margin-right: 0;
-        align-self: center;
-        margin-bottom: 0;
+        width: 100%;
         padding: 20px;
     }
 
-    .bottomSection {
-        padding: 40px 15px 40px 15px;
-        align-items: center;
+    .contactForm h2,
+    .contactForm p {
         text-align: center;
     }
 
-    .contactForm {
-        gap: 15px;
-    }
-
-    .contactInfoWrapper {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .contactInfoWrapper>div {
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .contactInfoWrapper h4 {
-        text-align: center;
-    }
-
-    .contactInfoWrapper p {
-        text-align: center;
-    }
-
-    .contactItem {
-        justify-content: center;
+    .contactForm button {
+        width: 100%;
     }
 }

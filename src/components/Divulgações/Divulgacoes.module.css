@@ -1,49 +1,64 @@
 .partnersContainer {
-  background-color: #6e1111;
-  padding: 80px 20px;
-  position: relative;
-  min-height: 70vh;
+  padding: 100px 20px;
 }
 
 .partnersContent {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
-.partnersContent h3,
-.partnersContent p {
-  color: white;
+.apresentacaoSecao {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.apresentacaoSecao h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.apresentacaoSecao p {
+  font-size: 1.125rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .partnersGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
-  margin-top: 60px;
-  padding: 40px;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .partnerCard {
-  border-radius: 15px;
+  background-color: #3d0f0f;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  transition: box-shadow 0.3s ease;
+  height: 420px;
 }
 
 .partnerCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
 .partnerCard img {
   width: 100%;
-  height: 250px;
+  max-height: 280px;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
@@ -52,157 +67,56 @@
 }
 
 .partnerCard h3 {
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin: 0;
-  font-weight: bold;
+  color: #fc7e7e;
+  font-size: 1.25rem;
+  margin-top: 24px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  text-align: center;
+  letter-spacing: 1.2px;
 }
 
-.whatsappFloat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.whatsapp-float a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background-color: #25D366;
-  border-radius: 50%;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  transition: all 0.3s ease;
-  animation: pulse 2s infinite;
-}
-
-.whatsapp-float a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
-}
-
-.whatsapp-float img {
-  width: 35px;
-  height: 35px;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  }
-  50% {
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8), 0 0 0 10px rgba(37, 211, 102, 0.1);
-  }
-  100% {
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  }
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
-  .partners-container {
-    padding: 40px 15px;
+  .partnersContainer {
+    padding: 60px 15px;
   }
 
-  .partners-header {
-    padding: 30px 15px;
-    margin-bottom: 40px;
+  .apresentacaoSecao {
+    text-align: center;
   }
 
-  .partners-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  .apresentacaoSecao h2 {
+    font-size: 2rem;
   }
-  
-  .partner-card {
-    padding: 20px;
-    width: 100%;
+
+  .apresentacaoSecao p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .partnerCard {
     height: auto;
-    min-height: 250px;
+    padding: 25px 15px;
   }
 
-  .partner-card img {
-    height: 200px;
+  .partnerCard img {
+    max-height: 220px;
   }
-  
-  .partner-card h3 {
-    padding: 15px 0;
-  }
-  
-  .whatsapp-float {
-    bottom: 15px;
-    right: 15px;
-  }
-  
-  .whatsapp-float a {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .whatsapp-float img {
-    width: 30px;
-    height: 30px;
+
+  .partnerCard h3 {
+    font-size: 1.1rem;
+    margin-top: 18px;
   }
 }
 
-/* Responsividade para mobile */
 @media (max-width: 480px) {
-  .partners-container {
-    padding: 30px 10px;
-  }
-  
-  .partners-header {
-    padding: 20px 10px;
-    margin-bottom: 30px;
-  }
-  
-  .partners-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    margin-top: 30px;
-    padding: 15px;
-    width: 100%;
-  }
-  
-  .partner-card {
-    padding: 20px;
-    min-height: 280px;
+  .partnerCard img {
+    max-height: 180px;
   }
 
-  .partner-card img {
-    height: 220px;
-    object-fit: cover;
-  }
-
-  .partner-card h3 {
-    padding: 15px 0;
-  }
-}
-
-/* Grid dinâmico para telas pequenas */
-@media (max-width: 360px) {
-  .partners-grid {
-    grid-template-columns: 1fr !important;
-    padding: 12px;
-  }
-  
-  .partner-card {
-    min-height: 260px;
-    padding: 18px;
-  }
-
-  .partner-card img {
-    height: 200px;
+  .partnerCard h3 {
+    font-size: 1rem;
   }
 }

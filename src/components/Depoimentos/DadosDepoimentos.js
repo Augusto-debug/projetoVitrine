@@ -2,7 +2,7 @@ export const depoimentos = [
   {
     depoimento: "O post gerou um pico de acessos. A parceria perfeita para quem busca visibilidade e vendas!",
     nome: "Ana Silva",
-    avatar: "https://i.pravatar.cc/150?img=1" // Usaremos avatares de exemplo
+    avatar: "https://i.pravatar.cc/150?img=1"
   },
   {
     depoimento: "A divulgação transformou nosso negócio. Os resultados foram visíveis em poucas semanas.",
@@ -11,7 +11,7 @@ export const depoimentos = [
   },
   {
     depoimento: "Recebemos dezenas de novos clientes . Recomendo fortemente!",
-    nome: "Carlos Souza",
+    nome: "Ana Souza",
     avatar: "https://i.pravatar.cc/150?img=5"
   },
   {

@@ -17,23 +17,13 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1>Vitrine Uberlândia</h1>
-          <h2>Érica</h2>
-          <p className="hero-description">
+          <h3>Érica</h3>
+          <h2 className="hero-description">
             Desde 2018, impulsionando marcas, produtos e serviços em Uberlândia.
-          </p>
-          <p className="hero-details">
-            Com criatividade, estratégia e um atendimento personalizado, meu
-            objetivo é conectar pessoas e negócios de forma autêntica e eficaz.
-          </p>
-          <p className="hero-details">
-            Sou especialista em Marketing Digital, apaixonada por histórias de
-            vida e por criar conexões que transformam. Acredito no poder de
-            trabalhar com propósito, ao lado de pessoas honestas e dedicadas,
-            que buscam conquistar seu espaço com amor pelo que fazem.
-          </p>
+          </h2>
           <div className="hero-actions">
             <button
-              className="partner-btn"
+              className="btn-primary"
               onClick={() => scrollToSection("faleConosco")}
             >
               Seja um parceiro!

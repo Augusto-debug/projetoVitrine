@@ -1,79 +1,96 @@
 .secaoFaq {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container h2 {
+    color: #7D0000;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.perguntasContainer {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    align-items: center; 
-    text-align: center; 
+    gap: 16px;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
-.secaoFaq h3 {
-    margin-bottom: 5px; 
-    color: white; 
-}
-
-.secaoFaq h2 {
-    margin-bottom: 20px;
-    color: white; 
-}
-
-.secaoFaq p {
-    padding: 10px 20px;
-    color: white; 
-    max-width: 800px; 
-}
-
-.secaoFaq details {
-    background-color: transparent; 
-    border-radius: 0; 
-    margin-bottom: 0; 
-    width: 100%; 
-    max-width: 800px; 
-    overflow: hidden; 
-    border: none; 
-    padding-top: 10px;
-}
-
-.secaoFaq summary {
-    padding: 0 10px 15px 0; 
+.perguntaBtn {
+    background: transparent;
+    border: none;
     font-weight: bold;
+    font-size: 1.125rem;
+    color: #7D0000;
     cursor: pointer;
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: space-between;
-    color: white; 
-    background-color: transparent; 
-    border-bottom: none;
-    border-top: none; 
-
-    list-style: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: none;
+    width: 100%;
+    text-align: center;
+    outline: none;
 }
 
-.secaoFaq summary::-webkit-details-marker {
-    display: none;
+.perguntaBtn:hover {
+    outline: 2px solid #7D0000;
+    outline-offset: 2px;
 }
 
-.secaoFaq summary::after {
-    content: '\25BC';
+.perguntaBtn:focus {
+    outline: none;
+}
+
+.perguntaBtn.ativo {
+    background-color: #7D0000;
     color: white;
-    margin-left: 10px; 
-    flex-shrink: 0; 
-    transition: transform 0.3s ease; 
 }
 
-.secaoFaq details[open] summary::after {
-    transform: rotate(180deg); 
+.perguntaBtn.ativo:focus {
+    background-color: #7D0000;
+    color: white;
+    outline: none;
 }
 
-.secaoFaq details p {
-    padding: 15px 20px 10px 0; 
-    background-color: transparent; 
-    border-top: none;
-    text-align: left; 
-    margin-top: 0; 
-    margin-bottom: 0; 
+.respostaContainer {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    width: 100%;
+    text-align: center;
+    min-height: 60px;
 }
 
-.secaoFaq details + details {
-    border-top: 1px solid rgba(255, 255, 255, 0.5); 
+.resposta {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    color: #7D0000;
+    padding: 0 16px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
+}
+
+.esconder {
+    pointer-events: none;
 }

@@ -1,15 +1,16 @@
-import React from 'react'
-import style from './Divulgacoes.module.css'
-import Apresentacao from '../Apresentacao'
+import React from 'react';
+import style from './Divulgacoes.module.css';
 
 const Parceiros = () => {
   return (
     <section id='parcerias' className={style.partnersContainer}>
       <div className={style.partnersContent}>
-        <Apresentacao
-          tituloSecao="Sua marca na vitrine"
-          paragrafoSecao="Destaque o melhor da sua marca: alcance, engajamento e conexões no instagram." />
-
+        <div className={style.apresentacaoSecao}>
+          <h2>Parcerias em Destaque</h2>
+          <p>
+            Os melhores parceiros estão aqui — e a sua marca pode ser a próxima a brilhar
+          </p>
+        </div>
 
         <div className={style.partnersGrid}>
           <div
@@ -24,7 +25,7 @@ const Parceiros = () => {
             className={style.partnerCard}
             onClick={() => window.open('https://www.instagram.com/p/DJ6mpaxN24J/?img_index=1', '_blank')}
           >
-            <img src="/fn-cortinas.png" alt="FN Cortes" />
+            <img src="/fn-cortinas.png" alt="FN Cortinas" />
             <h3>FN Cortinas</h3>
           </div>
 
@@ -38,7 +39,7 @@ const Parceiros = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Parceiros
+export default Parceiros;

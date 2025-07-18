@@ -1,26 +1,122 @@
 .footer {
-    color: #0F172A; 
-    padding: 20px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    flex-wrap: wrap; 
-    width: 100%; 
+    background-color: #7d0000;
+    padding: 60px 20px;
+    color: white;
+    width: 100%;
     box-sizing: border-box;
+    text-align: left;
 }
 
-.footer p {
-    margin: 5px 0; 
-    white-space: nowrap; 
+.contactContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: start;
 }
+
+.contactContainer>div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 350px;
+}
+
+.contactContainer h3 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.contactGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.contactItem svg {
+    width: auto;
+    height: 1.3em;
+    display: inline-block;
+}
+
+.instagramIcon {
+    color: #C13584;
+    margin-bottom: -3px;
+}
+
+.whatsappIcon {
+    color: #25D366;
+    margin-bottom: -2px;
+}
+
+.emailIcon {
+    color: #1E90FF;
+    margin-bottom: -3px;
+}
+
+.contactContainer p {
+    margin: 0;
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 1.2em;
+}
+
+.footer a:hover {
+    color: #ffcc99;
+}
+
+/* Responsividade */
 
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column; 
-        text-align: center; 
-        padding: 20px 10px;
+        align-items: center;
+        text-align: center;
+        padding: 40px 15px;
     }
-    .footer p {
-        white-space: normal; 
+
+    .contactContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .contactContainer>div {
+        align-items: center;
+        text-align: center;
+        max-width: none;
+    }
+
+    .contactItem {
+        justify-content: center;
+    }
+
+    .contactContainer h3,
+    .contactContainer p {
+        text-align: center;
     }
 }

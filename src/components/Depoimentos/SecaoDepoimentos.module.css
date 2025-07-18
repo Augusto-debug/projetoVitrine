@@ -1,156 +1,132 @@
-:root {
-  --text-primary: background-color: #FAFAFA;
-}
-
 .secaoDepoimentos {
+  padding: 100px 20px;
+  background-color: #F1F5F9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--brand-marron);
-  padding: 40px 20px;
   overflow: hidden;
-  min-height: 70vh;
 }
 
 .conteudoDepoimentos {
   max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
-  margin: auto;
-  padding: 20px;
 }
 
-.secaoDepoimentos h3 {
-  color: white;
-  font-weight: bold;
+.secaoDepoimentos h2 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.secaoDepoimentos p {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.secaoDepoimentos .textoTituloDepoimento {
+  color: #F0F0F0;
 }
 
 .containerImagemDepoimentos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  gap: 0;
-  background-color: #FAFAFA;
-  border-radius: 16px;
-  overflow: hidden;
-  height: 500px;
-}
-
-.containerImagemDepoimentos > div:nth-child(1) {
-  width: 340px;
-  min-width: 340px;
-  max-width: 340px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #FAFAFA;
-}
-
-.imagemConsultora {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border: none;
-  outline: none;
-}
-
-.containerImagemDepoimentos > div:nth-child(2) {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px 16px;
-  background-color: #FAFAFA;
-  padding: 32px 32px 32px 32px;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  width: 100%;
+  background-color: #3d0f0f;
   background-image: url('/vetor-depoimentos.svg');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 180px auto;
-  flex: 1;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.containerImagemDepoimentos>div:nth-child(1) {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagemConsultora {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerImagemDepoimentos>div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
   align-content: center;
 }
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .secaoDepoimentos {
-    padding: 40px 15px;
-    min-height: auto;
-  }
-  
-  .conteudoDepoimentos {
-    padding: 15px;
-  }
-  
-  .containerImagemDepoimentos {
-    flex-direction: column;
-    height: auto;
-    width: 100%;
+    padding: 60px 15px;
   }
 
-  .containerImagemDepoimentos > div:nth-child(1) {
-    margin: auto;
-    width: 100%;
+  .secaoDepoimentos h2 {
+    font-size: 2rem;
   }
-  .containerImagemDepoimentos > div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+
+  .secaoDepoimentos p {
+    font-size: 1rem;
+  }
+
+  .containerImagemDepoimentos {
+    grid-template-columns: 1fr;
     padding: 25px;
     background-size: 120px auto;
-    width: 100%;
-    height: auto;
-    align-self: center;
-    align-items: start;
   }
+
+  .containerImagemDepoimentos>div:nth-child(1),
   .imagemConsultora {
-    border-radius: 16px;
-    width: 100vw;
+    width: 100%;
+    max-height: 220px;
+  }
+
+  .containerImagemDepoimentos>div:nth-child(2) {
+    gap: 20px;
+    padding-top: 20px;
   }
 }
 
 /* Responsividade para mobile */
 @media (max-width: 480px) {
-  .secaoDepoimentos {
-    padding: 30px 10px;
-  }
-  
-  .conteudoDepoimentos {
-    padding: 10px;
-  }
-  
-  .containerImagemDepoimentos {
-    flex-direction: column;
-    height: auto;
-    background-color: #FAFAFA;  
-    border-radius: 16px;
-    gap: 20px;
-  }
-  
-  .containerImagemDepoimentos > div:nth-child(1) {
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-  }
-  
   .imagemConsultora {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
+    max-height: 180px;
     border-radius: 12px;
   }
-  
-  .containerImagemDepoimentos > div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  .containerImagemDepoimentos {
+    gap: 20px;
+    padding: 20px;
+    background-size: 100px auto;
+  }
+
+  .containerImagemDepoimentos>div:nth-child(2) {
     gap: 15px;
-    padding: 0;
-    background: none;
-    width: 100%;
-    align-items: start;
+  }
+
+  .secaoDepoimentos h2 {
+    font-size: 1.75rem;
+  }
+
+  .secaoDepoimentos p {
+    font-size: 0.95rem;
   }
 }
-

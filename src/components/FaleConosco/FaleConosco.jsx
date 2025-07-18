@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa6';
+import { FaEnvelope } from 'react-icons/fa6';
 import emailjs from '@emailjs/browser';
 import styles from './FaleConosco.module.css';
 
@@ -85,94 +85,77 @@ function FaleConosco() {
       >
         <div>
           <form onSubmit={handleSubmit} className={styles.contactForm}>
-          <h2>Seja um parceiro!</h2>
-          <p>Eu quero ouvir você</p>
+            <h2>Seja um parceiro!</h2>
+            <p>Eu quero ouvir você</p>
 
-          <div>
-            <label htmlFor="nome">Nome:</label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
-              required
-            />
-          </div>
+            <div>
+              <label htmlFor="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
+                required
+              />
+            </div>
 
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-                setEmailError('');
-              }}
-              required
-            />
-            {emailError && <p className={styles.errorMessage}>{emailError}</p>}
-          </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setEmailError('');
+                }}
+                required
+              />
+              {emailError && <p className={styles.errorMessage}>{emailError}</p>}
+            </div>
 
-          <div>
-            <label htmlFor="telefone">Telefone:</label>
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              value={telefone}
-              onChange={(e) => {
-                setTelefone(e.target.value);
-                setTelefoneError('');
-              }}
-            />
-            {telefoneError && <p className={styles.errorMessage}>{telefoneError}</p>}
-          </div>
+            <div>
+              <label htmlFor="telefone">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                value={telefone}
+                onChange={(e) => {
+                  setTelefone(e.target.value);
+                  setTelefoneError('');
+                }}
+              />
+              {telefoneError && <p className={styles.errorMessage}>{telefoneError}</p>}
+            </div>
 
-          <div>
-            <label htmlFor="mensagem">Mensagem:</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="5"
-              value={mensagem}
-              onChange={(e) => setMensagem(e.target.value)}
-              required
-            ></textarea>
-          </div>
+            <div>
+              <label htmlFor="mensagem">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                value={mensagem}
+                onChange={(e) => setMensagem(e.target.value)}
+                required
+              ></textarea>
+            </div>
 
-          <button type="submit">
-            <FaEnvelope style={{ marginRight: '8px' }} />
-            Enviar Mensagem
-          </button>
-          {statusEnvio && (
-            <p className={`${styles.statusMessage} ${statusEnvio.includes('sucesso') ? styles.success :
+            <button type="submit">
+              <FaEnvelope style={{ marginRight: '8px' }} />
+              Enviar Mensagem
+            </button>
+            {statusEnvio && (
+              <p className={`${styles.statusMessage} ${statusEnvio.includes('sucesso') ? styles.success :
                 statusEnvio.includes('Erro') ? styles.error : ''
-              }`}>
-              {statusEnvio}
-            </p>
-          )}
-        </form>
+                }`}>
+                {statusEnvio}
+              </p>
+            )}
+          </form>
         </div>
-      </div>
-
-      <div className={styles.bottomSection}>
-          <div>
-                    <div className={styles.contactInfoWrapper}>
-          <div>
-            <h4>Visite o Instagram</h4>
-            <p className={styles.contactItem}><FaInstagram /><a href="https://www.instagram.com/vitrine_uberlandia/" target="_blank" rel="noopener noreferrer">@vitrine_uberlandia</a></p>
-          </div>
-
-          <div>
-            <h4>Contato</h4>
-            <p className={styles.contactItem}><FaWhatsapp /> <a href='https://wa.me/5534991954278' target="_blank" rel="noopener noreferrer">(34) 99195-4278</a></p>
-            <p className={styles.contactItem}><FaEnvelope /> <a href="mailto:vitrine.uberlandia@hotmail.com">vitrine.uberlandia@hotmail.com</a></p>
-          </div>
-        </div>
-          </div>
       </div>
     </section>
   );

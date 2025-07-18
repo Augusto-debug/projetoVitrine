@@ -20,15 +20,15 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.headerContainer}>
-      <div className={styles.headerContent}>
-        <div>
+    <header className={styles.headerFullWidth}>
+      <div className={styles.headerContainer}>
+        <div className={styles.logoWrapper}>
           <img src="/ericaLogo.svg" alt="logo" />
         </div>
 
         <nav className={`${styles.navHeader} ${isMenuOpen ? styles.active : ""}`}>
           <ul>
-          <li>
+            <li>
               <a href="#parcerias" onClick={() => scrollToSection("parcerias")}>
                 Divulgações
               </a>
@@ -39,10 +39,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#depoimentos"
-                onClick={() => scrollToSection("depoimentos")}
-              >
+              <a href="#depoimentos" onClick={() => scrollToSection("depoimentos")}>
                 Depoimentos
               </a>
             </li>
@@ -53,20 +50,21 @@ const Header = () => {
             </li>
             <li>
               <a href="#faq" onClick={() => scrollToSection("faq")}>
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#faleConosco" 
-                onClick={() => scrollToSection("faleConosco")}
-                className={styles.contactButton}
-              >
-                Seja um parceiro!
+                Perguntas
               </a>
             </li>
           </ul>
         </nav>
+
+        <div className={styles.contactButtonWrapper}>
+          <a
+            href="#faleConosco"
+            onClick={() => scrollToSection("faleConosco")}
+            className={`${styles.contactButton} btn-primary`}
+          >
+            Seja um parceiro!
+          </a>
+        </div>
 
         <button
           className={`${styles.menuToggle} ${isMenuOpen ? styles.active : ""}`}
