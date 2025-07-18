@@ -1,40 +1,21 @@
-.partners-container {
+.partnersContainer {
   background-color: #6e1111;
   padding: 80px 20px;
   position: relative;
   min-height: 70vh;
 }
 
-.partners-content {
+.partnersContent {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.partners-header {
-  text-align: center;
-  margin-bottom: 60px;
-  padding: 40px 20px;
-  border-radius: 10px;
-}
-
-.partners-header h2 {
+.partnersContent h3,
+.partnersContent p {
   color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0 0 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
-.partners-header p {
-  color: white;
-  font-size: 1.2rem;
-  margin: 0;
-  opacity: 0.95;
-  line-height: 1.6;
-}
-
-.partners-grid {
+.partnersGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
@@ -43,7 +24,7 @@
   border-radius: 10px;
 }
 
-.partner-card {
+.partnerCard {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -53,12 +34,12 @@
   cursor: pointer;
 }
 
-.partner-card:hover {
+.partnerCard:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.partner-card img {
+.partnerCard img {
   width: 100%;
   height: 250px;
   object-fit: contain;
@@ -66,22 +47,21 @@
   transition: transform 0.3s ease;
 }
 
-.partner-card:hover img {
+.partnerCard:hover img {
   transform: scale(1.05);
 }
 
-.partner-card h3 {
+.partnerCard h3 {
   color: white;
   text-align: center;
   padding: 20px 0;
   margin: 0;
-  font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.whatsapp-float {
+.whatsappFloat {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -133,14 +113,6 @@
     margin-bottom: 40px;
   }
 
-  .partners-header h2 {
-    font-size: 2rem;
-  }
-  
-  .partners-header p {
-    font-size: 1rem;
-  }
-  
   .partners-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -165,7 +137,6 @@
   }
   
   .partner-card h3 {
-    font-size: 1rem;
     padding: 15px 0;
   }
   
@@ -196,14 +167,6 @@
     margin-bottom: 30px;
   }
   
-  .partners-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .partners-header p {
-    font-size: 0.95rem;
-  }
-  
   .partners-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 15px;
@@ -223,7 +186,6 @@
   }
 
   .partner-card h3 {
-    font-size: 1.1rem;
     padding: 15px 0;
   }
 }

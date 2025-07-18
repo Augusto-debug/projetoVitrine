@@ -34,27 +34,23 @@
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
   font-weight: bold;
   margin: 0 0 10px 0;
   line-height: 1.1;
 }
 
 .hero-text h2 {
-  font-size: 2.5rem;
   font-weight: 600;
   margin: 0 0 30px 0;
 }
 
 .hero-description {
-  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.4;
 }
 
 .hero-details {
-  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -72,7 +68,6 @@
   padding: 15px 30px;
   border: none;
   border-radius: 25px;
-  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -136,19 +131,4 @@
     text-align: center;
   }
   
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-  
-  .hero-description {
-    font-size: 1.2rem;
-  }
-  
-  .hero-details {
-    font-size: 1rem;
-  }
 }

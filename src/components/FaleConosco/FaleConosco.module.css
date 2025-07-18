@@ -67,7 +67,6 @@
 }
 
 .contactForm h2 {
-    font-size: 2.8em;
     margin-bottom: 10px;
     color: #000000;
     text-align: left;
@@ -75,7 +74,6 @@
 }
 
 .contactForm p {
-    font-size: 1.1em;
     margin-bottom: 30px;
     line-height: 1.5;
     color: #334155;
@@ -93,7 +91,6 @@
 .contactForm label {
     font-weight: bold;
     margin-bottom: 8px;
-    font-size: 1em;
     color: #94A3B8;
 }
 
@@ -104,7 +101,6 @@
     padding: 12px;
     border: 1px solid #C9C9C9;
     border-radius: 8px;
-    font-size: 1em;
     width: 100%;
     box-sizing: border-box;
     background-color: #F8FAFC;
@@ -129,7 +125,6 @@
     padding: 10px 15px;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -159,7 +154,6 @@
 
 .errorMessage {
     color: red;
-    font-size: 0.9em;
     margin-top: 5px;
     text-align: left;
 }
@@ -206,7 +200,6 @@
 }
 
 .contactInfoWrapper h4 {
-    font-size: 1.5em;
     margin-bottom: 10px;
     color: white;
     display: flex;
@@ -217,12 +210,10 @@
 }
 
 .contactInfoWrapper h4 svg {
-    font-size: 1.7em;
     color: white;
 }
 
 .contactInfoWrapper p {
-    font-size: 1.1em;
     margin: 5px 0;
     color: white;
     text-align: left;
@@ -286,10 +277,6 @@
         text-align: center;
     }
 
-    .contactForm h2 {
-        font-size: 2.2em;
-    }
-
     .contactForm {
         gap: 15px;
     }
@@ -309,16 +296,10 @@
 
     .contactInfoWrapper h4 {
         text-align: center;
-        font-size: 1.4em;
-    }
-
-    .contactInfoWrapper h4 svg {
-        font-size: 1.6em;
     }
 
     .contactInfoWrapper p {
         text-align: center;
-        font-size: 1em;
     }
 
     .contactItem {

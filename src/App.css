@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 h1,
@@ -28,7 +30,9 @@ section:nth-child(odd) {
 }
 
 
-section > div, header div, footer div {
+section>div,
+header div,
+footer div {
     width: 1200px;
     margin: auto;
     padding: 20px;

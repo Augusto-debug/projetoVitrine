@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "./SecaoFaq.module.css";
+import Apresentacao from "../Apresentacao";
 
 const url = "https://augusto-debug.github.io/projetoVitrineUberlandia/src/req.json";
 
@@ -28,7 +29,9 @@ export default function SecaoFaq() {
   return (
     <section id="faq" className={style.secaoFaq}>
       <div>
-        <h3>Perguntas frequentes</h3>
+        <Apresentacao
+          tituloSecao="Perguntas frequentes"
+        />
         {perguntas.map((item, index) => (
           <details key={index}>
             <summary>

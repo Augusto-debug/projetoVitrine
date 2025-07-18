@@ -51,7 +51,6 @@
 }
 
 .contactForm h2 {
-    font-size: 2.8em;
     margin-bottom: 10px;
     color: #000000;
     text-align: left;
@@ -59,7 +58,6 @@
 }
 
 .contactForm p {
-    font-size: 1.1em;
     margin-bottom: 30px;
     line-height: 1.5;
     color: #334155;
@@ -77,7 +75,6 @@
 .contactForm label {
     font-weight: bold;
     margin-bottom: 8px;
-    font-size: 1em;
     color: #94A3B8;
 }
 
@@ -88,7 +85,6 @@
     padding: 12px;
     border: 1px solid #C9C9C9;
     border-radius: 8px;
-    font-size: 1em;
     width: 100%;
     box-sizing: border-box;
     background-color: #F8FAFC;
@@ -113,7 +109,6 @@
     padding: 10px 15px;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -143,7 +138,6 @@
 
 .errorMessage {
     color: red;
-    font-size: 0.9em;
     margin-top: 5px;
     text-align: left;
 }
@@ -187,7 +181,6 @@
 }
 
 .contactInfoWrapper h4 {
-    font-size: 1.5em;
     margin-bottom: 10px;
     color: white;
     display: flex;
@@ -198,12 +191,10 @@
 }
 
 .contactInfoWrapper h4 svg {
-    font-size: 1.7em;
     color: white;
 }
 
 .contactInfoWrapper p {
-    font-size: 1.1em;
     margin: 5px 0;
     color: white;
     text-align: left;
@@ -278,19 +269,10 @@
     box-sizing: border-box;
 }
 
-.conteudoTexto {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    padding: 0 20px;
-    max-width: 600px;
-    margin-bottom: 40px;
-    color: #000;
-}
+
 
 .secaoParceiros h2 {
     margin-bottom: 10px;
-    font-size: 2.5em;
     color: #000;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -298,10 +280,8 @@
 
 .secaoParceiros p {
     line-height: 1.6;
-    font-size: 1.1em;
     color: #000;
     white-space: nowrap;
-    padding-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -366,10 +346,6 @@
         background-color: rgba(240, 240, 240, 0.7);
     }
 
-    .conteudoTexto {
-        max-width: 80%;
-        margin-bottom: 30px;
-    }
 
     .containerParceiros {
         grid-template-columns: repeat(2, 1fr);
@@ -399,21 +375,11 @@
         display: none;
     }
 
-    .conteudoTexto {
-        max-width: 95%;
-        padding: 0 15px;
-    }
-
-    .secaoParceiros h2 {
-        font-size: 2rem;
-    }
-
     .secaoParceiros p {
         white-space: normal;
         overflow: visible;
         text-overflow: clip;
         padding-bottom: 15px;
-        font-size: 1rem;
     }
 
     .containerParceiros {
@@ -463,16 +429,8 @@
         padding: 30px 10px;
     }
 
-    .conteudoTexto {
-        padding: 0 10px;
-    }
-
-    .secaoParceiros h2 {
-        font-size: 1.8rem;
-    }
 
     .secaoParceiros p {
-        font-size: 0.95rem;
         padding-bottom: 10px;
     }
 

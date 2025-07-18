@@ -21,7 +21,6 @@
     padding: 20px;
     border-radius: 12px;
     background-color: #FAFAFA;
-    font-size: 1.4rem;
     gap: 10px;
 }
 
@@ -80,7 +79,6 @@
         height: auto;
         min-height: 250px;
         padding: 15px;
-        font-size: 1.2rem;
     }
     
     .containerMetricas {
@@ -117,7 +115,6 @@
         height: auto;
         min-height: 200px;
         padding: 12px;
-        font-size: 1.1rem;
         gap: 15px;
     }
     

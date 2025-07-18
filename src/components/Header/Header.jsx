@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,61 +20,63 @@ const Header = () => {
   };
 
   return (
-    <header className="header-container">
-      <div>
-              <img src="/ericaLogo.svg" alt="logo" />
+    <header className={styles.headerContainer}>
+      <div className={styles.headerContent}>
+        <div>
+          <img src="/ericaLogo.svg" alt="logo" />
+        </div>
 
-      <button
-        className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        <span className="hamburger-line"></span>
-        <span className="hamburger-line"></span>
-        <span className="hamburger-line"></span>
-      </button>
+        <nav className={`${styles.navHeader} ${isMenuOpen ? styles.active : ""}`}>
+          <ul>
+          <li>
+              <a href="#parcerias" onClick={() => scrollToSection("parcerias")}>
+                Divulgações
+              </a>
+            </li>
+            <li>
+              <a href="#metricas" onClick={() => scrollToSection("metricas")}>
+                Métricas
+              </a>
+            </li>
+            <li>
+              <a
+                href="#depoimentos"
+                onClick={() => scrollToSection("depoimentos")}
+              >
+                Depoimentos
+              </a>
+            </li>
+            <li>
+              <a href="#parceiros" onClick={() => scrollToSection("parceiros")}>
+                Parcerias
+              </a>
+            </li>
+            <li>
+              <a href="#faq" onClick={() => scrollToSection("faq")}>
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#faleConosco" 
+                onClick={() => scrollToSection("faleConosco")}
+                className={styles.contactButton}
+              >
+                Seja um parceiro!
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <nav className={`nav-header ${isMenuOpen ? "active" : ""}`}>
-        <ul>
-        <li>
-            <a href="#parcerias" onClick={() => scrollToSection("parcerias")}>
-              Divulgações
-            </a>
-          </li>
-          <li>
-            <a href="#metricas" onClick={() => scrollToSection("metricas")}>
-              Métricas
-            </a>
-          </li>
-          <li>
-            <a
-              href="#depoimentos"
-              onClick={() => scrollToSection("depoimentos")}
-            >
-              Depoimentos
-            </a>
-          </li>
-          <li>
-            <a href="#parceiros" onClick={() => scrollToSection("parceiros")}>
-              Parcerias
-            </a>
-          </li>
-          <li>
-            <a href="#faq" onClick={() => scrollToSection("faq")}>
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a 
-              href="#faleConosco" 
-              onClick={() => scrollToSection("faleConosco")}
-              className="contact-button"
-            >
-              Seja um parceiro!
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <button
+          className={`${styles.menuToggle} ${isMenuOpen ? styles.active : ""}`}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+        </button>
       </div>
     </header>
   );

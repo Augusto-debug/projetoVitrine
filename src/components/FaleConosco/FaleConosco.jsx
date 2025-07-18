@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa6';
 import emailjs from '@emailjs/browser';
 import styles from './FaleConosco.module.css';
 
