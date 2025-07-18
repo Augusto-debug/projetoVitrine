@@ -102,7 +102,7 @@
 
 /* Media Queries para Responsividade */
 
-/* Tablets grandes e desktops pequenos (1024px - 1200px) */
+/* Desktops pequenos (1025px - 1200px) */
 @media screen and (max-width: 1200px) {
     .headerContainer {
         padding: 5px 24px;
@@ -122,7 +122,7 @@
     }
 }
 
-/* Tablets (768px - 1024px) */
+/* Tablets grandes (851px - 1024px) */
 @media screen and (max-width: 1024px) {
     .headerContainer {
         padding: 5px 20px;
@@ -140,33 +140,21 @@
         padding: 6px 12px;
         border-radius: 16px;
     }
-}
 
-/* Tablets pequenos (600px - 768px) */
-@media screen and (max-width: 768px) {
-    .navHeader ul {
-        gap: 10px;
-    }
-
-    .navHeader a {
-        padding: 5px 10px;
-    }
-
-    .contactButton {
-        padding: 5px 10px;
-        border-radius: 15px;
+    .contactButtonWrapper {
+        display: none;
     }
 }
 
-/* Mobile (até 600px) */
-@media screen and (max-width: 600px) {
+/* MENU HAMBÚRGUER - Tablets pequenos e Mobile (até 850px) */
+@media screen and (max-width: 850px) {
     .headerContainer {
         padding: 5px 15px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    /* Ocultar botão "Seja um parceiro" no mobile */
+    /* Ocultar botão "Seja um parceiro" */
     .contactButtonWrapper {
         display: none;
     }
@@ -207,6 +195,7 @@
         display: block;
         padding: 12px 20px;
         border-radius: 0;
+        border-bottom: none;
         transition: background-color 0.3s ease;
     }
 
@@ -242,7 +231,7 @@
         padding: 10px 15px;
     }
 
-    .headerContainer img {
+    .logoWrapper img {
         height: 70px;
     }
 
@@ -258,7 +247,7 @@
         padding: 4px 15px;
     }
 
-    .headerContainer img {
+    .logoWrapper img {
         height: 30px;
     }
 
