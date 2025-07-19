@@ -20,6 +20,13 @@
   gap: 12px;
 }
 
+.cardDepoimentos h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  color: #4a4a4a;
+}
+
 .avatarAutor {
   width: 48px;
   height: 48px;
@@ -50,6 +57,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  color: #4a4a4a;
 }
 
 /* Responsividade para tablets */

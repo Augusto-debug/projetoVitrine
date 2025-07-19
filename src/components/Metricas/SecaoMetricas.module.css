@@ -1,26 +1,12 @@
 .secaoMetricas {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
     position: relative;
     overflow: hidden;
-    padding: 64px 20px;
-    min-height: 70vh;
+    width: 100%;
 }
-
-.metricasTipoUm,
-.metricasTipoDois {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; 
-    align-items: center; 
-    border: 1px solid #7D0000;
-    text-align: center;
-    width: 600px;
-    height: 300px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #FAFAFA;
-    gap: 10px;
-}
-
 
 .secaoMetricas::before {
     content: '';
@@ -42,90 +28,101 @@
     height: 100%;
     opacity: 0.5;
     background: url('/udi-noite.jpg') center center/cover no-repeat;    
-    /* clip-path: polygon(0 45%, 100% 30%, 100% 100%, 0 100%); */
     pointer-events: none;
 }
 
 .conteudoMetricas {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    gap: 40px;
     align-items: center;
-    gap: 20px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
 }
 
 .conteudoMetricas h2 {
-    z-index: 2;
+    font-size: 2.5rem;
     color: #FAFAFA;
+    font-weight: 800;
+    margin-bottom: 12px;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .conteudoMetricas p {
-    z-index: 2;
+    font-size: 1.125rem;
     color: #FAFAFA;
-    font-weight: 400;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .containerMetricas {
     width: 100%;
-    z-index: 2;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
-.containerMetricas>div {
-    margin: 20px;
+.metricasTipoUm,
+.metricasTipoDois {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid #7D0000;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #FAFAFA;
+    gap: 10px;
 }
-
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
     .secaoMetricas {
-        padding: 40px 15px;
-        min-height: auto;
+        padding: 60px 15px;
     }
     
-    .conteudoMetricas {
-        padding: 15px;
+    .conteudoMetricas h2 {
+        font-size: 2rem;
+    }
+    
+    .conteudoMetricas p {
+        font-size: 1rem;
+    }
+    
+    .containerMetricas {
+        flex-direction: column;
+        gap: 20px;
     }
     
     .metricasTipoUm,
     .metricasTipoDois {
         width: 100%;
-        max-width: 100%;
+        max-width: 500px;
         height: auto;
         min-height: 250px;
         padding: 15px;
     }
-    
-    .containerMetricas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .containerMetricas>div {
-        margin: 0;
-    }
-
 }
 
 /* Responsividade para mobile */
 @media (max-width: 480px) {
-    .secaoMetricas {
-        padding: 30px 10px;
+    .conteudoMetricas h2 {
+        font-size: 1.75rem;
     }
     
-    .conteudoMetricas {
-        padding: 10px;
+    .conteudoMetricas p {
+        font-size: 0.95rem;
     }
     
     .metricasTipoUm,
@@ -138,15 +135,6 @@
     }
     
     .containerMetricas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+        gap: 15px;
     }
-    
-    .containerMetricas>div {
-        margin: 0;
-    }
-    
-    
 }

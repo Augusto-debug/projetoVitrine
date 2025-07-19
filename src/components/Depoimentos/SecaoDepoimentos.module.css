@@ -1,17 +1,22 @@
 .secaoDepoimentos {
-  padding: 60px 20px;
-  background-color: #F1F5F9;
+  min-height: 70vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 60px 20px;
+  position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .conteudoDepoimentos {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+  position: relative;
 }
 
 .secaoDepoimentos h2 {
@@ -24,21 +29,21 @@
 
 .secaoDepoimentos p {
   font-size: 1.125rem;
-  color: #4a4a4a;
+  color: #e2e8f0;
   line-height: 1.6;
   max-width: 680px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .secaoDepoimentos .textoTituloDepoimento {
-  color: #F0F0F0;
+  color: #e2e8f0;
 }
 
 .containerImagemDepoimentos {
   display: grid;
   grid-template-columns: 340px 1fr;
-  gap: 40px;
+  gap: 60px;
   width: 100%;
   background-color: #3d0f0f;
   border-radius: 16px;
@@ -75,6 +80,10 @@
     padding: 60px 15px;
   }
 
+  .conteudoDepoimentos {
+    gap: 20px;
+  }
+
   .secaoDepoimentos h2 {
     font-size: 2rem;
   }
@@ -85,8 +94,8 @@
 
   .containerImagemDepoimentos {
     grid-template-columns: 1fr;
+    gap: 30px;
     padding: 25px;
-    background-size: 120px auto;
   }
 
   .containerImagemDepoimentos>div:nth-child(1) {
@@ -108,13 +117,20 @@
 
 /* Responsividade para mobile */
 @media (max-width: 480px) {
+  .secaoDepoimentos h2 {
+    font-size: 1.75rem;
+  }
+
+  .secaoDepoimentos p {
+    font-size: 0.95rem;
+  }
+
   .imagemConsultora {
     width: 100%;
     height: auto;
     min-height: 500px;
     max-height: 500px;
   }
-
 
   .containerImagemDepoimentos {
     gap: 20px;
@@ -124,13 +140,5 @@
 
   .containerImagemDepoimentos>div:nth-child(2) {
     gap: 15px;
-  }
-
-  .secaoDepoimentos h2 {
-    font-size: 1.75rem;
-  }
-
-  .secaoDepoimentos p {
-    font-size: 0.95rem;
   }
 }

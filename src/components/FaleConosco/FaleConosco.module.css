@@ -1,11 +1,11 @@
 .faleConoscoSection {
-    position: relative;
-    /* Necessário para o ::before funcionar */
+    min-height: 70vh;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 800px;
+    align-items: center;
     padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
     background-image: url('/uberlandiaDia.jpg');
     background-size: cover;
     background-position: center;
@@ -20,31 +20,25 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 0;
+    z-index: 1;
 }
 
 .topSection {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 750px;
-    padding: 0 20px;
-    color: white;
-    text-align: center;
-    z-index: 1;
-}
-
-.topSection>div {
-    position: relative;
-    z-index: 1;
     max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
-    height: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.topSection > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
 .contactForm {
@@ -54,7 +48,6 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -63,16 +56,19 @@
 }
 
 .contactForm h2 {
-    margin-bottom: 10px;
+    font-size: 2.5rem;
     color: #000000;
+    font-weight: 800;
+    margin-bottom: 12px;
     width: 100%;
     text-align: left;
 }
 
 .contactForm p {
-    margin-bottom: 15px;
-    line-height: 1.5;
+    font-size: 1.125rem;
     color: #334155;
+    line-height: 1.6;
+    margin-bottom: 15px;
     width: 100%;
     text-align: left;
 }
@@ -154,36 +150,52 @@
     text-align: left;
 }
 
-/* Responsividade */
+/* Responsividade para tablets */
 @media (max-width: 768px) {
+    .faleConoscoSection {
+        padding: 60px 15px;
+    }
+
     .topSection {
-        background-image: none;
-        background-color: #FFFFFF;
-        padding: 40px 15px;
         justify-content: center;
     }
 
-    .faleConoscoSection::before {
-        display: none;
-    }
-
-    .topSection>div {
+    .topSection > div {
         justify-content: center;
-        padding: 0;
     }
 
     .contactForm {
         max-width: 90%;
         width: 100%;
-        padding: 20px;
+        padding: 25px;
     }
 
-    .contactForm h2,
+    .contactForm h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .contactForm p {
+        font-size: 1rem;
         text-align: center;
     }
 
     .contactForm button {
         width: 100%;
+    }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 480px) {
+    .contactForm h2 {
+        font-size: 1.75rem;
+    }
+
+    .contactForm p {
+        font-size: 0.95rem;
+    }
+
+    .contactForm {
+        padding: 20px;
     }
 }

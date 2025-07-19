@@ -1,17 +1,15 @@
 .secaoParceiros {
-    position: relative;
+    min-height: 70vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     padding: 60px 20px;
+    position: relative;
     overflow: hidden;
-
+    width: 100%;
     background-image: url('/udi-teatro.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: white;
 }
 
 .secaoParceiros::before {
@@ -25,45 +23,43 @@
     z-index: 1;
 }
 
-.secaoParceiros>div {
-    position: relative;
-    z-index: 10;
+.secaoParceiros > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 60px;
+    z-index: 2;
+    position: relative;
+}
+
+.apresentacaoSecao {
     text-align: center;
-    box-sizing: border-box;
-    max-width: 1200px;
-    width: 100%;
-    min-height: 200px;
 }
 
 .secaoParceiros h2 {
-    margin-bottom: 12px;
+    font-size: 2.5rem;
     color: #ffffff;
     font-weight: 800;
-    font-size: 2.5rem;
+    margin-bottom: 12px;
     text-shadow: none;
 }
 
 .secaoParceiros p {
-    line-height: 1.6;
-    color: #e2e8f0;
-    margin-bottom: 40px;
-    max-width: 600px;
     font-size: 1.125rem;
-    text-shadow: none;
+    color: #e2e8f0;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto;
     text-align: center;
+    text-shadow: none;
 }
 
 .containerParceiros {
-    position: relative;
-    z-index: 10;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 10px;
+    gap: 30px;
     width: 100%;
     justify-items: center;
 }
@@ -127,21 +123,27 @@
     text-align: center;
 }
 
-/* RESPONSIVO */
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .secaoParceiros {
+        padding: 60px 15px;
+    }
 
-@media (max-width: 1200px) {
-    .containerParceiros {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 800px;
-        margin: 0 auto;
-        gap: 20px;
-        padding: 15px;
-        justify-items: center;
+    .secaoParceiros > div {
+        gap: 40px;
     }
 
     .secaoParceiros h2 {
         font-size: 2rem;
-        margin-bottom: 10px;
+    }
+
+    .secaoParceiros p {
+        font-size: 1rem;
+    }
+
+    .containerParceiros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .partnerItem {
@@ -150,36 +152,26 @@
     }
 }
 
-@media (max-width: 768px) {
-    .secaoParceiros {
-        background-image: none;
-        background-color: #fafafa;
-        min-height: auto;
-        padding: 40px 15px;
+/* Responsividade para mobile */
+@media (max-width: 480px) {
+    .secaoParceiros h2 {
+        font-size: 1.75rem;
     }
 
     .secaoParceiros p {
-        max-width: 100%;
-        padding-bottom: 15px;
-        text-align: center;
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .containerParceiros {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr;
         gap: 15px;
-        padding: 20px;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        justify-items: center;
     }
 
     .partnerItem {
         width: 100%;
         max-width: 280px;
-        height: 320px;
-        margin: 0 auto;
+        height: auto;
+        padding: 15px;
     }
 
     .partnerHighlightBox {
@@ -194,38 +186,5 @@
         height: 160px;
         border-radius: 12px;
         margin-bottom: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .containerParceiros {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 15px;
-        width: 100%;
-        margin: 0 auto;
-        justify-items: center;
-    }
-
-    .partnerItem {
-        height: auto;
-        padding: 15px;
-        width: 100%;
-        max-width: 280px;
-    }
-}
-
-@media (max-width: 360px) {
-    .containerParceiros {
-        grid-template-columns: 1fr !important;
-        padding: 12px;
-        justify-items: center;
-    }
-
-    .partnerItem {
-        min-height: auto;
-        padding: 12px;
-        width: 100%;
-        max-width: none;
     }
 }
