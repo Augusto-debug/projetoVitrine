@@ -17,10 +17,10 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1>Vitrine Uberlândia</h1>
-          <h3>Érica</h3>
-          <h2 className="hero-description">
+          <h2>Érica</h2>
+          <p className="hero-description">
             Desde 2018, impulsionando marcas, produtos e serviços em Uberlândia.
-          </h2>
+          </p>
           <div className="hero-actions">
             <button
               className="btn-primary"

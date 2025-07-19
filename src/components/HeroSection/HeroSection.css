@@ -40,14 +40,14 @@
   color: #6e1111;
 }
 
-.hero-text h3 {
+.hero-text h2 {
   font-weight: 700;
   font-size: 2.5rem;
   margin: 0 0 15px 0;
   color: #4a0c0c;
 }
 
-.hero-text h2.hero-description {
+.hero-text p.hero-description {
   font-weight: 700;
   font-size: 1.4rem;
   margin-bottom: 30px;
@@ -88,11 +88,11 @@
     font-size: 2.5rem;
   }
 
-  .hero-text h3 {
+  .hero-text h2 {
     font-size: 1.8rem;
   }
 
-  .hero-text h2.hero-description {
+  .hero-text p.hero-description {
     font-size: 1.1rem;
   }
 
