@@ -85,7 +85,7 @@ const SecaoMetricas = () => {
                 iniciarAnimacao={estaVisivel} />
 
               <MetricasDoisDefault
-                textoMetrica="Mulher"
+                textoMetrica="Mulheres"
                 numerosMetrica={75}
                 iniciarAnimacao={estaVisivel} />
             </div>
