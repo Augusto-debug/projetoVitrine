@@ -96,8 +96,8 @@
   .imagemConsultora {
     width: 100%;
     height: auto;
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 500px;
+    max-height: 500px;
   }
 
   .containerImagemDepoimentos>div:nth-child(2) {
@@ -111,11 +111,10 @@
   .imagemConsultora {
     width: 100%;
     height: auto;
-    min-height: 250px;
-    max-height: 350px;
-    border-radius: 12px;
-    object-fit: cover;
+    min-height: 500px;
+    max-height: 500px;
   }
+
 
   .containerImagemDepoimentos {
     gap: 20px;
