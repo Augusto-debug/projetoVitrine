@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Header from "./components/Header/Header"
 import HeroSection from "./components/HeroSection/HeroSection"
 import Divulgacoes from "./components/Divulgações/Divulgacoes"
@@ -11,6 +12,9 @@ import SecaoParceiros from "./components/Parceiros/SecaoParceiros"
 import Erica from "./components/Erica/Erica"
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
