@@ -131,24 +131,34 @@
     transform: translateY(-2px);
 }
 
+/* Mensagem de status geral (Enviando..., Sucesso, Erro) */
 .statusMessage {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #0F172A;
+    background-color: yellow; /* Adicione esta linha para teste */
+    margin-top: 15px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    transition: color 0.3s ease;
 }
 
-.statusMessage.success {
-    color: green;
+/* Cor para mensagem de SUCESSO */
+.success {
+    color: #28a745; /* Um verde padrão e acessível */
 }
 
-.statusMessage.error {
-    color: red;
+/* Cor para mensagem de ERRO */
+.error {
+    color: #dc3545; /* Um vermelho padrão e acessível */
 }
 
+/* Mensagem de erro específica para cada campo (ex: "O nome é obrigatório") */
 .errorMessage {
-    color: red;
+    color: #dc3545;       /* Mesmo vermelho da mensagem de erro geral */
+    font-size: 1px;  /* Mesmo tamanho da outra mensagem para consistência */
     margin-top: 5px;
     text-align: left;
+    background-color: yellow;
 }
 
 /* Responsividade para tablets */

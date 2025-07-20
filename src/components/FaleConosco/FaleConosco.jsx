@@ -9,8 +9,11 @@ function FaleConosco() {
   const [telefone, setTelefone] = useState('');
   const [mensagem, setMensagem] = useState('');
   const [statusEnvio, setStatusEnvio] = useState('');
+
+  const [nomeError, setNomeError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [telefoneError, setTelefoneError] = useState('');
+  const [mensagemError, setMensagemError] = useState('');
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -26,11 +29,18 @@ function FaleConosco() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    setNomeError('');
     setEmailError('');
     setTelefoneError('');
+    setMensagemError('');
     setStatusEnvio('');
 
     let isValid = true;
+
+    if (nome.trim() === '') {
+      setNomeError('O nome é obrigatório.');
+      isValid = false;
+    }
 
     if (email.trim() === '') {
       setEmailError('O email é obrigatório.');
@@ -40,8 +50,16 @@ function FaleConosco() {
       isValid = false;
     }
 
-    if (telefone.trim() !== '' && !validateTelefone(telefone)) {
-      setTelefoneError('Por favor, insira um telefone válido (apenas números, 10 ou 11 dígitos).');
+    if (telefone.trim() === '') {
+      setTelefoneError('O telefone é obrigatório.');
+      isValid = false;
+    } else if (!validateTelefone(telefone)) {
+      setTelefoneError('Formato de telefone inválido. Use (XX) XXXXX-XXXX.');
+      isValid = false;
+    }
+
+    if (mensagem.trim() === '') {
+      setMensagemError('A mensagem é obrigatória.');
       isValid = false;
     }
 
@@ -80,11 +98,9 @@ function FaleConosco() {
 
   return (
     <section id='faleConosco' className={styles.faleConoscoSection}>
-      <div
-        className={styles.topSection}
-      >
+      <div className={styles.topSection}>
         <div>
-          <form onSubmit={handleSubmit} className={styles.contactForm}>
+          <form onSubmit={handleSubmit} className={styles.contactForm} noValidate>
             <h2>Seja um parceiro!</h2>
             <p>Eu quero ouvir você</p>
 
@@ -95,9 +111,13 @@ function FaleConosco() {
                 id="nome"
                 name="nome"
                 value={nome}
-                onChange={(e) => setNome(e.target.value)}
+                onChange={(e) => {
+                  setNome(e.target.value);
+                  setNomeError('');
+                }}
                 required
               />
+              {nomeError && <p className={styles.errorMessage}>{nomeError}</p>}
             </div>
 
             <div>
@@ -127,6 +147,7 @@ function FaleConosco() {
                   setTelefone(e.target.value);
                   setTelefoneError('');
                 }}
+                required
               />
               {telefoneError && <p className={styles.errorMessage}>{telefoneError}</p>}
             </div>
@@ -138,9 +159,13 @@ function FaleConosco() {
                 name="mensagem"
                 rows="5"
                 value={mensagem}
-                onChange={(e) => setMensagem(e.target.value)}
+                onChange={(e) => {
+                  setMensagem(e.target.value);
+                  setMensagemError('');
+                }}
                 required
               ></textarea>
+              {mensagemError && <p className={styles.errorMessage}>{mensagemError}</p>}
             </div>
 
             <button type="submit">
@@ -148,9 +173,10 @@ function FaleConosco() {
               Enviar Mensagem
             </button>
             {statusEnvio && (
-              <p className={`${styles.statusMessage} ${statusEnvio.includes('sucesso') ? styles.success :
-                statusEnvio.includes('Erro') ? styles.error : ''
-                }`}>
+              <p className={`${styles.statusMessage} ${
+                statusEnvio.includes('sucesso') ? styles.success :
+                statusEnvio.includes('Erro') || statusEnvio.includes('corrija') ? styles.error : ''
+              }`}>
                 {statusEnvio}
               </p>
             )}
