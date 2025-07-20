@@ -48,6 +48,8 @@
   font-weight: bold;
   margin-bottom: 10px;
   word-wrap: break-word;
+  color: #333;
+
 }
 
 .cardDepoimentos div:nth-child(2) p {
@@ -57,7 +59,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  color: #4a4a4a;
+  color: #333;
 }
 
 /* Responsividade para tablets */

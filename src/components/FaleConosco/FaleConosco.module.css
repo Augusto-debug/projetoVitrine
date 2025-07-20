@@ -34,7 +34,7 @@
     position: relative;
 }
 
-.topSection > div {
+.topSection>div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -57,7 +57,7 @@
 
 .contactForm h2 {
     font-size: 2.5rem;
-    color: #000000;
+    color: rgb(34, 33, 33);
     font-weight: 800;
     margin-bottom: 12px;
     width: 100%;
@@ -66,7 +66,7 @@
 
 .contactForm p {
     font-size: 1.125rem;
-    color: #334155;
+    color: rgb(34, 33, 33);
     line-height: 1.6;
     margin-bottom: 15px;
     width: 100%;
@@ -83,7 +83,7 @@
 .contactForm label {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #94A3B8;
+    color: #333;
 }
 
 .contactForm input[type="text"],
@@ -160,7 +160,7 @@
         justify-content: center;
     }
 
-    .topSection > div {
+    .topSection>div {
         justify-content: center;
     }
 

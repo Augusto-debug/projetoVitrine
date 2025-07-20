@@ -62,7 +62,7 @@ const SecaoMetricas = () => {
                 iniciarAnimacao={estaVisivel} />
               <MetricasUmDefault
                 textoMetrica="Alcance"
-                legenda ="Contas únicas que visualizaram nosso conteúdo"
+                legenda ="Contas que visualizaram nosso conteúdo"
                 valorAlvo={32000}
                 iniciarAnimacao={estaVisivel} />
               <MetricasUmDefault

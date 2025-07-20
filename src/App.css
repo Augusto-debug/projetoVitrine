@@ -56,3 +56,9 @@ section:nth-child(odd) {
 p {
     text-align: justify;
 }
+
+section > div, header > div, footer > div, p, h1, h2, h3, h4 {
+
+
+border: 1px solid black;
+}
