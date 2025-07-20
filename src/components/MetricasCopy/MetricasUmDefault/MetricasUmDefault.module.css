@@ -1,0 +1,37 @@
+.metricaUnica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    border: #7c0000 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+}
+
+.metricaUnica h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #7c0000;
+}
+
+
+.metricaUnica>span {
+    background-color: #7D0000;
+    color: white;
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.metricaUnica>p {
+    margin-top: 10px;
+    font-size: 0.80rem;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}

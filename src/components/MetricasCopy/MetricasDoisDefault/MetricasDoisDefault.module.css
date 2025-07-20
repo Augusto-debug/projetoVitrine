@@ -1,0 +1,51 @@
+
+.containerAlcance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 20px;
+  width: 300px;
+  height: 140px;
+  border: 2px solid #7D0000;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(125, 0, 0, 0.12);
+  margin: 10px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  transition: all 0.3s ease;
+}
+
+.containerAlcance h4{
+  margin: 0;
+  flex: 1;
+  font-size: 16px;
+  color: #7c0000;
+}
+
+.containerAlcance:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(125, 0, 0, 0.18);
+}
+
+
+.wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.valorCentro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  color: #7c0000;
+}
+
+
+
