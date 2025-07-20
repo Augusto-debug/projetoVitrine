@@ -126,7 +126,9 @@
 }
 
 .contactForm button:hover {
-    background-color: #A00000;
+    background-color: #a04646;
+    box-shadow: 0 6px 20px #dd6767;
+    transform: translateY(-2px);
 }
 
 .statusMessage {
