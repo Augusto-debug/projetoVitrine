@@ -1,35 +1,37 @@
-
 .containerAlcance {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
   padding: 10px;
-  width: 200px;
-
+  border: #7c0000 1px solid;
+  margin: 20px;
+  border-radius: 10px;
+  gap: 10px;
+  width: 250px;
+  height: 150px;
 }
 
-.containerAlcance h4{
+.containerAlcance h4 {
   margin-bottom: 10px;
+  font-size: 16px;
+  color: #7c0000;
 }
 
 
 .wrapper {
   position: relative;
-  width: 130px;
-  height: auto;
-
+  width: 100px;
+  height: 100px;
 }
 
 .valorCentro {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   transform: translate(-50%, -50%);
   color: #7c0000;
 }
-
-
-

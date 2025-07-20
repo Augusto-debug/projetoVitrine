@@ -57,18 +57,22 @@ const SecaoMetricas = () => {
             <div className={style.metricasGrid}>
               <MetricasUmDefault
                 textoMetrica="Seguidores"
+                legenda ="Seguidores do nosso perfil do instagram"
                 valorAlvo={6100}
                 iniciarAnimacao={estaVisivel} />
               <MetricasUmDefault
                 textoMetrica="Alcance"
+                legenda ="Contas que visualizaram nosso conteúdo"
                 valorAlvo={32000}
                 iniciarAnimacao={estaVisivel} />
               <MetricasUmDefault
                 textoMetrica="Impressões"
+                legenda ="Exibição do nosso conteúdo em tela"
                 valorAlvo={88000}
                 iniciarAnimacao={estaVisivel} />
               <MetricasUmDefault
                 textoMetrica="Stories"
+                legenda ="Visualizações dos nossos stories"
                 valorAlvo={4000}
                 iniciarAnimacao={estaVisivel} />
             </div>
@@ -78,7 +82,7 @@ const SecaoMetricas = () => {
             <div>
               <h3>Nosso Público</h3>
             </div>
-            <div className={style.metricasGrid}>
+            <div className={style.graficosGrid}>
               <MetricasDoisDefault
                 textoMetrica="Uberlândia"
                 numerosMetrica={76}

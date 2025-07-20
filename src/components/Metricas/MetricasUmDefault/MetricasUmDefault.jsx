@@ -1,7 +1,7 @@
 import style from './MetricasUmDefault.module.css';
 import useContador from '../Hooks/useCounter';
 
-function MetricasUmDefault({ textoMetrica, valorAlvo, iniciarAnimacao }) {
+function MetricasUmDefault({ textoMetrica, legenda, valorAlvo, iniciarAnimacao }) {
   const contador = useContador(valorAlvo, 2000, iniciarAnimacao);
 
   const formatarNumero = (num) => {
@@ -15,6 +15,7 @@ function MetricasUmDefault({ textoMetrica, valorAlvo, iniciarAnimacao }) {
     <div className={style.metricaUnica}>
       <h4>{textoMetrica}</h4>
       <span>{formatarNumero(contador)}</span>
+      <p className={style.legenda}>{legenda}</p>
     </div>
   );
 }
