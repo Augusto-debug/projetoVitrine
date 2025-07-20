@@ -37,8 +37,8 @@ h4 {
 }
 
 .btn-primary:hover {
-    background-color: #007d23;
-    box-shadow: 0 6px 20px rgba(0, 125, 35, 0.4);
+    background-color: #a04646;
+    box-shadow: 0 6px 20px #dd6767;
     transform: translateY(-2px);
 }
 
