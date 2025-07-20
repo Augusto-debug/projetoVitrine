@@ -55,7 +55,6 @@
 .cardDepoimentos div:nth-child(2) p {
   font-style: italic;
   margin: 0;
-  line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -131,11 +130,9 @@
 
   .cardDepoimentos div:nth-child(2) h4 {
     margin-bottom: 8px;
-    line-height: 1.2;
   }
 
   .cardDepoimentos div:nth-child(2) p {
-    line-height: 1.3;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
