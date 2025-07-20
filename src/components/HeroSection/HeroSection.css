@@ -68,11 +68,14 @@
 }
 
 .hero-image img {
-  max-width: 90%;
+  max-width: 85%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  object-position: top center;
+  object-fit: contain;
+  object-position: center;
 }
 
 @media (max-width: 768px) {

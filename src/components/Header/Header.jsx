@@ -66,7 +66,7 @@ const Header = () => {
           <a
             href="/"
             onClick={(e) => scrollToSection("faleConosco", e)}
-            className={`${styles.contactButton} btn-primary`}
+            className={`btn-primary`}
           >
             Seja um parceiro!
           </a>

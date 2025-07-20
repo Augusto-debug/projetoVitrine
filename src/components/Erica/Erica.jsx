@@ -19,15 +19,15 @@ const Erica = () => {
 
                 <div className={styles.ericaContent}>
                     <div className={styles.ericaImage}>
-                        <img src="/imgHeroSection.jpg" alt="Érica - Vitrine Uberlândia" />
+                        <img src="/erica5.jpg" alt="Érica - Vitrine Uberlândia" />
                     </div>
 
                     <div className={styles.ericaText}>
-                        <p className={styles.ericaDetails}>
-                            Sou especialista em Marketing Digital, apaixonada por histórias de vida e por criar conexões que inspiram e transformam. Acredito na força de um trabalho com propósito, feito ao lado de pessoas honestas, dedicadas e movidas pelo amor ao que fazem.
+                        <p className={`${styles.ericaDetails} ericaText`}>
+                            "Sou especialista em Marketing Digital, apaixonada por histórias de vida e por criar conexões que inspiram e transformam. Acredito na força de um trabalho com propósito, feito ao lado de pessoas honestas, dedicadas e movidas pelo amor ao que fazem."
                         </p>
-                        <p className={styles.ericaDetails}>
-                            Com criatividade, estratégia e um atendimento verdadeiramente personalizado, meu propósito é construir conexões autênticas entre pessoas e negócios, gerando resultados reais e duradouros.
+                        <p className={`${styles.ericaDetails} ericaText`}>
+                            "Com criatividade, estratégia e um atendimento verdadeiramente personalizado, meu propósito é construir conexões autênticas entre pessoas e negócios, gerando resultados reais e duradouros."
                         </p>
                     </div>
                 </div>

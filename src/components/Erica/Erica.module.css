@@ -1,3 +1,4 @@
+
 .ericaContainer {
     min-height: 70vh;
     display: flex;
@@ -52,6 +53,7 @@
 .ericaText {
     z-index: 2;
     position: relative;
+    font-family: 'Dancing Script';
 }
 
 .ericaDetails {
