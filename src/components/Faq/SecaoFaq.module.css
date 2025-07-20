@@ -14,7 +14,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
     z-index: 2;
     position: relative;
 }
@@ -31,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
 }
 
 .perguntaBtn {
@@ -65,7 +63,6 @@
     background-color: transparent;
     color: #7D0000;
     padding: 24px;
-    text-align: left;
     font-size: 1.1rem;
     border-top: none;
     animation: fadeIn 0.3s ease;
