@@ -24,7 +24,7 @@ const Header = () => {
     <header className={styles.headerFullWidth}>
       <div className={styles.headerContainer}>
         <div className={styles.logoWrapper}>
-          <img src="/ericaLogo.svg" alt="logo" />
+          <img src="/logoAjustada.png" alt="logo" />
         </div>
 
         <nav className={`${styles.navHeader} ${isMenuOpen ? styles.active : ""}`}>
