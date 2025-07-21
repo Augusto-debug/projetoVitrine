@@ -40,34 +40,41 @@
 
 .partnersGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr); /* Igual aos parceiros */
+  gap: 30px; /* Igual aos parceiros */
   width: 100%;
+  justify-items: center; /* Igual aos parceiros */
 }
 
 .partnerCard {
+  text-align: center;
   background-color: #3d0f0f;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+  border-radius: 12px; /* Igual aos parceiros */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 30px 20px;
-  transition: box-shadow 0.3s ease;
-  justify-content: space-between;
+  cursor: pointer;
+  padding: 20px 10px; /* Igual aos parceiros */
+  transition: transform 0.3s ease;
+  position: relative;
+  width: 250px; /* Igual aos parceiros */
+  height: fit-content; /* Igual aos parceiros */
+  box-sizing: border-box;
+  gap: 15px; /* Igual aos parceiros */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .partnerCard:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transform: scale(1.05); /* Igual aos parceiros */
 }
 
 .partnerCard img {
-  width: 100%;
-  max-height: 280px;
-  object-fit: contain;
-  border-radius: 12px;
+  width: 160px; /* Igual aos parceiros */
+  height: 160px; /* Igual aos parceiros */
+  object-fit: cover;
+  border-radius: 8px; /* Igual aos parceiros */
+  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -76,10 +83,10 @@
 }
 
 .partnerCard h3 {
+  font-weight: 700; /* Igual aos parceiros */
   color: #fc7e7e;
-  font-size: 1.25rem;
-  margin-top: 30px;
-  font-weight: 700;
+  font-size: 1rem; /* Igual aos parceiros */
+  margin: 0; /* Igual aos parceiros */
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1.2px;
@@ -103,18 +110,19 @@
     font-size: 1rem;
   }
 
+  .partnersGrid {
+    grid-template-columns: repeat(2, 1fr); /* Igual aos parceiros */
+    gap: 20px; /* Igual aos parceiros */
+  }
+
   .partnerCard {
-    height: auto;
-    padding: 25px 15px;
+    width: 220px; /* Igual aos parceiros */
+    height: 320px; /* Igual aos parceiros */
   }
 
   .partnerCard img {
-    max-height: 220px;
-  }
-
-  .partnerCard h3 {
-    font-size: 1.1rem;
-    margin-top: 18px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -128,11 +136,21 @@
     font-size: 0.95rem;
   }
 
-  .partnerCard img {
-    max-height: 180px;
+  .partnersGrid {
+    grid-template-columns: 1fr; /* Igual aos parceiros */
+    gap: 15px; /* Igual aos parceiros */
   }
 
-  .partnerCard h3 {
-    font-size: 1rem;
+  .partnerCard {
+    width: 100%; /* Igual aos parceiros */
+    max-width: 280px; /* Igual aos parceiros */
+    height: auto; /* Igual aos parceiros */
+    padding: 15px; /* Igual aos parceiros */
+  }
+
+  .partnerCard img {
+    width: 160px; /* Igual aos parceiros */
+    height: 160px; /* Igual aos parceiros */
+    border-radius: 12px; /* Igual aos parceiros */
   }
 }
