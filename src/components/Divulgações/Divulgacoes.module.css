@@ -2,25 +2,31 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 60px 20px;
+  padding: 60px 20px; /* Igual ao componente métricas */
   position: relative;
   overflow: hidden;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .partnersContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+  max-width: 1200px; /* Igual ao componente métricas */
+  width: 100%; /* Igual ao componente métricas */
+  margin: 0 auto; /* Igual ao componente métricas */
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px; /* Igual ao componente métricas */
+  align-items: center; /* Igual ao componente métricas */
   z-index: 2;
   position: relative;
+  box-sizing: border-box;
 }
 
 .apresentacaoSecao {
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Ajustar conforme gap do content */
 }
 
 .apresentacaoSecao h2 {
@@ -40,41 +46,37 @@
 
 .partnersGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Igual aos parceiros */
-  gap: 30px; /* Igual aos parceiros */
-  width: 100%;
-  justify-items: center; /* Igual aos parceiros */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 0; /* Remover padding, usar apenas gap do content */
+  border-radius: 10px;
+  justify-items: center;
+  width: 100%; /* Garantir largura total */
 }
 
 .partnerCard {
-  text-align: center;
-  background-color: #3d0f0f;
-  border-radius: 12px; /* Igual aos parceiros */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: 20px 10px; /* Igual aos parceiros */
-  transition: transform 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  width: 250px; /* Igual aos parceiros */
-  height: fit-content; /* Igual aos parceiros */
-  box-sizing: border-box;
-  gap: 15px; /* Igual aos parceiros */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  cursor: pointer;
+  background-color: #3d0f0f;
+  width: 100%;
+  max-width: 350px;
 }
 
 .partnerCard:hover {
-  transform: scale(1.05); /* Igual aos parceiros */
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .partnerCard img {
-  width: 160px; /* Igual aos parceiros */
-  height: 160px; /* Igual aos parceiros */
-  object-fit: cover;
-  border-radius: 8px; /* Igual aos parceiros */
-  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -83,23 +85,26 @@
 }
 
 .partnerCard h3 {
-  font-weight: 700; /* Igual aos parceiros */
-  color: #fc7e7e;
-  font-size: 1rem; /* Igual aos parceiros */
-  margin: 0; /* Igual aos parceiros */
-  text-transform: uppercase;
+  color: white;
   text-align: center;
-  letter-spacing: 1.2px;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .partnersContainer {
-    padding: 60px 15px;
+    padding: 60px 15px; /* Igual ao componente métricas */
   }
 
   .partnersContent {
-    gap: 40px;
+    max-width: 100%; /* Igual ao componente métricas */
+    padding: 0 10px; /* Igual ao componente métricas */
+    gap: 20px; /* Manter gap do métricas */
   }
 
   .apresentacaoSecao h2 {
@@ -111,23 +116,44 @@
   }
 
   .partnersGrid {
-    grid-template-columns: repeat(2, 1fr); /* Igual aos parceiros */
-    gap: 20px; /* Igual aos parceiros */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
   }
 
   .partnerCard {
-    width: 220px; /* Igual aos parceiros */
-    height: 320px; /* Igual aos parceiros */
+    width: 220px;
+    height: 320px;
+    padding: 15px;
+    max-width: 100%;
   }
 
   .partnerCard img {
     width: 160px;
     height: 160px;
   }
+
+  .partnerCard h3 {
+    font-size: 1.1rem;
+    padding: 15px 0;
+  }
 }
 
 /* Responsividade para mobile */
 @media (max-width: 480px) {
+  .partnersContainer {
+    padding: 60px 20px; /* Manter padding do container igual métricas */
+  }
+
+  .partnersContent {
+    padding: 0 5px; /* Igual ao componente métricas */
+    gap: 15px; /* Ajustar gap para mobile */
+  }
+
+  .apresentacaoSecao {
+    margin-bottom: 15px;
+  }
+
   .apresentacaoSecao h2 {
     font-size: 1.75rem;
   }
@@ -137,20 +163,43 @@
   }
 
   .partnersGrid {
-    grid-template-columns: 1fr; /* Igual aos parceiros */
-    gap: 15px; /* Igual aos parceiros */
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0;
   }
 
   .partnerCard {
-    width: 100%; /* Igual aos parceiros */
-    max-width: 280px; /* Igual aos parceiros */
-    height: auto; /* Igual aos parceiros */
-    padding: 15px; /* Igual aos parceiros */
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 15px;
   }
 
   .partnerCard img {
-    width: 160px; /* Igual aos parceiros */
-    height: 160px; /* Igual aos parceiros */
-    border-radius: 12px; /* Igual aos parceiros */
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+  }
+
+  .partnerCard h3 {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 360px) {
+  .partnersGrid {
+    gap: 12px;
+  }
+  
+  .partnerCard {
+    max-width: 260px;
+    padding: 12px;
+  }
+  
+  .partnerCard img {
+    width: 140px;
+    height: 140px;
   }
 }
