@@ -169,14 +169,13 @@ function FaleConosco() {
             </div>
 
             <button type="submit">
-              <FaEnvelope style={{ marginRight: '8px' }} />
+              <FaEnvelope style={{ marginRight: '8px', marginBottom: '2px' }} />
               Enviar Mensagem
             </button>
             {statusEnvio && (
-              <p className={`${styles.statusMessage} ${
-                statusEnvio.includes('sucesso') ? styles.success :
+              <p className={`${styles.statusMessage} ${statusEnvio.includes('sucesso') ? styles.success :
                 statusEnvio.includes('Erro') || statusEnvio.includes('corrija') ? styles.error : ''
-              }`}>
+                }`}>
                 {statusEnvio}
               </p>
             )}

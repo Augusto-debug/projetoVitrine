@@ -1,15 +1,16 @@
 import React from 'react';
 import style from './Divulgacoes.module.css';
+import Apresentacao from '../Apresentacao';
 
 const Parceiros = () => {
   return (
     <section id='divulgacoes' className={style.partnersContainer}>
       <div className={style.partnersContent}>
         <div className={style.apresentacaoSecao}>
-          <h2>Parcerias em Destaque</h2>
-          <p>
-            Os melhores parceiros estão aqui — e a sua marca pode ser a próxima a brilhar
-          </p>
+          <Apresentacao
+            tituloSecao="Parcerias em Destaque"
+            paragrafoSecao="Os melhores parceiros estão aqui — e a sua marca pode ser a próxima a brilhar"
+          />
         </div>
 
         <div className={style.partnersGrid}>

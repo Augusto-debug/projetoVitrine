@@ -28,6 +28,7 @@ export default function SecaoFaq() {
     <section id="faq" className={style.secaoFaq}>
       <div className={style.containerFaq}>
         <h2>Perguntas frequentes</h2>
+        <p></p>
 
         <div className={style.menuFaq}>
           {perguntas.map((item, index) => (

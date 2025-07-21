@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Erica.module.css";
+import Apresentacao from "../Apresentacao";
 
 const Erica = () => {
     const scrollToSection = (sectionId) => {
@@ -15,8 +16,10 @@ const Erica = () => {
     return (
         <section id="erica" className={styles.ericaContainer}>
             <div className={styles.ericaInner}>
-                <h1 className={styles.ericaTitle}>A Essência da Érica</h1>
-
+                <Apresentacao
+                    tituloSecao="A Essência da Érica"
+                    paragrafoSecao="Marketing com alma, propósito e presença"
+                />
                 <div className={styles.ericaContent}>
                     <div className={styles.ericaImage}>
                         <img src="/erica5.jpg" alt="Érica - Vitrine Uberlândia" />

@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .faleConoscoSection {
     min-height: 70vh;
     display: flex;
@@ -133,7 +138,8 @@
 
 /* Mensagem de status geral (Enviando..., Sucesso, Erro) */
 .statusMessage {
-    background-color: yellow; /* Adicione esta linha para teste */
+    background-color: yellow;
+    /* Adicione esta linha para teste */
     margin-top: 15px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -144,18 +150,22 @@
 
 /* Cor para mensagem de SUCESSO */
 .success {
-    color: #28a745; /* Um verde padrão e acessível */
+    color: #28a745;
+    /* Um verde padrão e acessível */
 }
 
 /* Cor para mensagem de ERRO */
 .error {
-    color: #dc3545; /* Um vermelho padrão e acessível */
+    color: #dc3545;
+    /* Um vermelho padrão e acessível */
 }
 
 /* Mensagem de erro específica para cada campo (ex: "O nome é obrigatório") */
 .errorMessage {
-    color: #dc3545;       /* Mesmo vermelho da mensagem de erro geral */
-    font-size: 1px;  /* Mesmo tamanho da outra mensagem para consistência */
+    color: #dc3545;
+    /* Mesmo vermelho da mensagem de erro geral */
+    font-size: 1px;
+    /* Mesmo tamanho da outra mensagem para consistência */
     margin-top: 5px;
     text-align: left;
     background-color: yellow;

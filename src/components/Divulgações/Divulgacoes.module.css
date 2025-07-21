@@ -1,8 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .partnersContainer {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 60px 20px; /* Igual ao componente métricas */
+  padding: 60px 20px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -11,47 +16,26 @@
 }
 
 .partnersContent {
-  max-width: 1200px; /* Igual ao componente métricas */
-  width: 100%; /* Igual ao componente métricas */
-  margin: 0 auto; /* Igual ao componente métricas */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Igual ao componente métricas */
-  align-items: center; /* Igual ao componente métricas */
+  gap: 20px;
+  align-items: center;
   z-index: 2;
   position: relative;
   box-sizing: border-box;
 }
 
-.apresentacaoSecao {
-  text-align: center;
-  border-radius: 10px;
-  margin-bottom: 20px; /* Ajustar conforme gap do content */
-}
-
-.apresentacaoSecao h2 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-
-.apresentacaoSecao p {
-  font-size: 1.125rem;
-  color: #e2e8f0;
-  max-width: 680px;
-  margin: 0 auto;
-  text-align: center;
-}
 
 .partnersGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 0; /* Remover padding, usar apenas gap do content */
   border-radius: 10px;
   justify-items: center;
-  width: 100%; /* Garantir largura total */
+  width: 100%;
 }
 
 .partnerCard {
@@ -60,7 +44,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  padding: 20px;
+  padding: 30px 20px;
   cursor: pointer;
   background-color: #3d0f0f;
   width: 100%;
@@ -87,8 +71,7 @@
 .partnerCard h3 {
   color: white;
   text-align: center;
-  padding: 20px 0;
-  margin: 0;
+  padding-top: 30px;
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -98,13 +81,13 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .partnersContainer {
-    padding: 60px 15px; /* Igual ao componente métricas */
+    padding: 60px 15px;
   }
 
   .partnersContent {
-    max-width: 100%; /* Igual ao componente métricas */
-    padding: 0 10px; /* Igual ao componente métricas */
-    gap: 20px; /* Manter gap do métricas */
+    max-width: 100%;
+    padding: 0 10px;
+    gap: 20px;
   }
 
   .apresentacaoSecao h2 {
@@ -142,12 +125,12 @@
 /* Responsividade para mobile */
 @media (max-width: 480px) {
   .partnersContainer {
-    padding: 60px 20px; /* Manter padding do container igual métricas */
+    padding: 60px 20px;
   }
 
   .partnersContent {
-    padding: 0 5px; /* Igual ao componente métricas */
-    gap: 15px; /* Ajustar gap para mobile */
+    padding: 0 5px;
+    gap: 15px;
   }
 
   .apresentacaoSecao {
@@ -196,12 +179,12 @@
   .partnersGrid {
     gap: 12px;
   }
-  
+
   .partnerCard {
     max-width: 100%;
     padding: 12px;
   }
-  
+
   .partnerCard img {
     width: 140px;
     height: 140px;

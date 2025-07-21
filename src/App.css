@@ -55,11 +55,12 @@ section:nth-child(odd) {
 p {
     text-align: justify;
     font-family: 'Lato', sans-serif;
-    
 }
 
-.ericaText{
+.ericaText {
     font-family: 'Dancing Script', sans-serif;
     font-size: 1.6rem;
     line-height: 1.6em;
+    letter-spacing: 1.5px;
+    color: #f1f5f9;
 }

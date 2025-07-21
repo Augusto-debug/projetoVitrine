@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./SecaoParceiros.module.css";
+import Apresentacao from "../Apresentacao";
 
 function SecaoParceiros() {
   const partners = [
@@ -15,8 +16,10 @@ function SecaoParceiros() {
     <section id="parceiros" className={styles.secaoParceiros}>
       <div>
         <div className={styles.apresentacaoSecao}>
-          <h2>Conheça mais parcerias</h2>
-          <p>Conheça mais marcas que acreditaram no meu trabalho</p>
+          <Apresentacao
+            tituloSecao="Parceiros que fazem a diferença"
+            paragrafoSecao="Conheça mais as marcas que acreditam no meu trabalho"
+          />
         </div>
 
         <div className={styles.containerParceiros}>
@@ -29,10 +32,11 @@ function SecaoParceiros() {
                 <p>{partner.name}</p>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
+          ))
+          }
+        </div >
+      </div >
+    </section >
   );
 }
 

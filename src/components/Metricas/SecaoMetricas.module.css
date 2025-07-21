@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .secaoMetricas {
     min-height: 70vh;
     display: flex;
@@ -38,7 +43,7 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    background: url('/udi-noite.jpg') left top/cover no-repeat;    
+    background: url('/udi-noite.jpg') left top/cover no-repeat;
     pointer-events: none;
 }
 
@@ -55,11 +60,6 @@
     position: relative;
 }
 
-.apresentacaoSecaoMetricas {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .apresentacaoSecaoMetricas h2 {
     font-size: 2.5rem;
     color: #7D0000;
@@ -70,9 +70,8 @@
 .apresentacaoSecaoMetricas p {
     font-size: 1.125rem;
     color: #333;
-    max-width: 680px;
-    margin: 0 auto;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .containerMetricas {
@@ -101,15 +100,15 @@
 .metricasGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center; /* Adicionar para centralizar itens do grid */
+    justify-items: center;
 }
 
 .graficosGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Adicionar gap entre os cards */
-    width: 100%; /* Garantir largura total */
+    gap: 10px;
+    width: 100%;
 }
 
 
@@ -121,8 +120,10 @@
     }
 
     .conteudoMetricas {
-        max-width: 100%; /* Adicionar */
-        padding: 0 10px; /* Adicionar */
+        max-width: 100%;
+        /* Adicionar */
+        padding: 0 10px;
+        /* Adicionar */
     }
 
     .apresentacaoSecaoMetricas h2 {
@@ -148,14 +149,17 @@
     }
 
     .metricasGrid {
-        grid-template-columns: repeat(2, 1fr); /* Garantir 2 colunas em tablet */
+        grid-template-columns: repeat(2, 1fr);
+        /* Garantir 2 colunas em tablet */
         gap: 10px;
         width: 100%;
-        justify-items: center; /* Adicionar para centralizar itens do grid */
+        justify-items: center;
+        /* Adicionar para centralizar itens do grid */
     }
 
     .graficosGrid {
-        gap: 15px; /* Ajustar gap para tablet */
+        gap: 15px;
+        /* Ajustar gap para tablet */
         width: 100%;
     }
 }
@@ -163,7 +167,8 @@
 /* Responsividade para mobile */
 @media (max-width: 480px) {
     .conteudoMetricas {
-        padding: 0 5px; /* Adicionar */
+        padding: 0 5px;
+        /* Adicionar */
     }
 
     .apresentacaoSecaoMetricas h2 {
@@ -177,7 +182,8 @@
     .metricasTipoUm,
     .metricasTipoDois {
         width: 100%;
-        max-width: 100%; /* Mudança */
+        max-width: 100%;
+        /* Mudança */
         height: auto;
         min-height: 200px;
         padding: 12px;
@@ -185,14 +191,17 @@
     }
 
     .metricasGrid {
-        grid-template-columns: 1fr; /* 1 coluna em mobile */
+        grid-template-columns: 1fr;
+        /* 1 coluna em mobile */
         gap: 10px;
         width: 100%;
-        justify-items: center; /* Garantir centralização no mobile */
+        justify-items: center;
+        /* Garantir centralização no mobile */
     }
 
     .graficosGrid {
-        gap: 10px; /* Gap menor no mobile */
+        gap: 10px;
+        /* Gap menor no mobile */
         width: 100%;
     }
 

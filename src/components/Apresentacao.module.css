@@ -1,0 +1,25 @@
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.apresentacao h2,
+.apresentacao p {
+    text-align: center;
+}
+
+.apresentacao h2 {
+    font-size: 2.5rem;
+    color: #fef6f6;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.apresentacao p {
+    font-size: 1.125rem;
+    color: #e9f2fe;
+    margin-bottom: 20px;
+}

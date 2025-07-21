@@ -1,11 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .secaoFaq {
-    min-height: 70vh;
     display: flex;
     align-items: center;
-    padding: 60px 20px;
     position: relative;
     overflow: hidden;
     width: 100%;
+    padding: 60px 20px;
 }
 
 .containerFaq {
@@ -15,21 +19,19 @@
     display: flex;
     flex-direction: column;
     z-index: 2;
-    position: relative;
 }
 
 .containerFaq h2 {
     font-size: 2.5rem;
     color: #7D0000;
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .menuFaq {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 }
 
 .perguntaBtn {
@@ -62,9 +64,8 @@
 .respostaArea {
     background-color: transparent;
     color: #7D0000;
-    padding: 24px;
+    padding: 20px;
     font-size: 1.1rem;
-    border-top: none;
     animation: fadeIn 0.3s ease;
 }
 
@@ -83,7 +84,7 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
     .secaoFaq {
-        padding: 60px 15px;
+        padding: 30px 15px;
     }
 
     .containerFaq {

@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
 .ericaContainer {
     min-height: 70vh;
@@ -14,18 +18,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 100%;
-    z-index: 2;
     position: relative;
-}
-
-.ericaTitle {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    font-weight: 800;
-    margin-bottom: 12px;
-    text-align: center;
+    gap: 20px;
 }
 
 .ericaContent {
@@ -50,17 +45,8 @@
     transition: transform 0.3s ease;
 }
 
-.ericaText {
-    z-index: 2;
-    position: relative;
-    font-family: 'Dancing Script';
-}
-
 .ericaDetails {
-    font-size: 1.125rem;
-    color: #e2e8f0;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
 /* Responsividade para tablets */
