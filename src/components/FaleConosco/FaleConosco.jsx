@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaEnvelope } from 'react-icons/fa6';
 import emailjs from '@emailjs/browser';
 import styles from './FaleConosco.module.css';
+import Animacao from '../tools/Animacao.jsx';
 
 function FaleConosco() {
   const [nome, setNome] = useState('');
@@ -182,6 +183,9 @@ function FaleConosco() {
           </form>
         </div>
       </div>
+
+      <Animacao css_identifier={`.${styles.contactForm}`} efeito="padrao" />
+
     </section>
   );
 }

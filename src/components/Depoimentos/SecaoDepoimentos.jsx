@@ -3,6 +3,7 @@ import CardDepoimentos from './CardDepoimentos.jsx';
 import { depoimentos } from './DadosDepoimentos.js';
 import style from './SecaoDepoimentos.module.css';
 import Apresentacao from '../Apresentacao.jsx';
+import Animacao from '../tools/Animacao.jsx';
 
 const SecaoDepoimentos = () => {
   return (
@@ -34,6 +35,9 @@ const SecaoDepoimentos = () => {
           </div>
         </div>
       </div>
+
+      <Animacao css_identifier={`.${style.containerImagemDepoimentos}`} efeito="esquerda" />
+
     </section>
   );
 };

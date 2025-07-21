@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SecaoParceiros.module.css";
 import Apresentacao from "../Apresentacao";
+import Animacao from "../tools/Animacao";
 
 function SecaoParceiros() {
   const partners = [
@@ -36,6 +37,9 @@ function SecaoParceiros() {
           }
         </div >
       </div >
+
+      <Animacao css_identifier={`.${styles.containerParceiros}`} efeito="padrao" />
+
     </section >
   );
 }

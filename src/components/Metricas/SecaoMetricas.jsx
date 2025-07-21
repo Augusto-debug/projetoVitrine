@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import style from "./SecaoMetricas.module.css";
 import MetricasUmDefault from "./MetricasUmDefault/MetricasUmDefault.jsx";
 import MetricasDoisDefault from "./MetricasDoisDefault/MetricasDoisDefault.jsx";
+import Animacao from "../tools/Animacao.jsx";
 
 const SecaoMetricas = () => {
   const [estaVisivel, setEstaVisivel] = useState(false);
@@ -91,6 +92,9 @@ const SecaoMetricas = () => {
           </div>
         </div>
       </div>
+
+      <Animacao css_identifier={`.${style.containerMetricas}`} efeito="esquerda" />
+
     </section>
   );
 };

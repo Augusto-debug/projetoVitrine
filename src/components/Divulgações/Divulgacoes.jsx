@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Divulgacoes.module.css';
 import Apresentacao from '../Apresentacao';
+import Animacao from '../tools/Animacao';
 
 const Parceiros = () => {
   return (
@@ -39,6 +40,9 @@ const Parceiros = () => {
           </div>
         </div>
       </div>
+
+      <Animacao css_identifier={`.${style.partnersGrid}`} efeito="direita" />
+
     </section>
   );
 };

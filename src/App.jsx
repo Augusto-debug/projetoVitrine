@@ -10,6 +10,7 @@ import FaleConosco from "./components/FaleConosco/FaleConosco"
 import Footer from "./components/Footer/Footer"
 import SecaoParceiros from "./components/Parceiros/SecaoParceiros"
 import Erica from "./components/Erica/Erica"
+import Animacao from "./components/tools/Animacao"
 
 function App() {
   useEffect(() => {
@@ -18,10 +19,12 @@ function App() {
 
   return (
     <>
+      <Animacao css_identifier="section" efeito="fade" />
+
       <Header />
       <HeroSection />
       <Erica />
-      <SecaoMetricas/>
+      <SecaoMetricas />
       <Divulgacoes />
       <SecaoParceiros />
       <SecaoDepoimentos />

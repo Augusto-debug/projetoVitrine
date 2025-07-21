@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Erica.module.css";
 import Apresentacao from "../Apresentacao";
+import Animacao from "../tools/Animacao";
 
 const Erica = () => {
     const scrollToSection = (sectionId) => {
@@ -35,6 +36,10 @@ const Erica = () => {
                     </div>
                 </div>
             </div>
+
+            <Animacao css_identifier={`.${styles.ericaDetails}`} efeito="padrao" />
+            <Animacao css_identifier={`.${styles.ericaImage}`} efeito="esquerda" />
+
         </section>
     );
 };

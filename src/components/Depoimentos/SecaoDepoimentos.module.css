@@ -33,7 +33,6 @@
   padding: 32px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  /* Adicionar para evitar overflow */
 }
 
 .containerImagemDepoimentos>div:nth-child(1) {
@@ -42,41 +41,35 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* Adicionar */
 }
 
 .imagemConsultora {
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   max-height: 600px;
-  /* Adicionar limite máximo */
 }
 
 .containerImagemDepoimentos>div:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  /* Reduzir de 320px para 280px */
   gap: 40px;
   align-content: center;
   overflow: hidden;
-  /* Adicionar */
 }
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .secaoDepoimentos {
     padding: 40px 15px;
-    /* Reduzir padding */
   }
 
   .conteudoDepoimentos {
     gap: 20px;
     padding: 0 10px;
-    /* Adicionar padding interno */
   }
 
   .apresentacaoSecao h2 {
@@ -91,14 +84,13 @@
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 20px;
-    /* Reduzir padding */
     overflow: hidden;
   }
 
   .containerImagemDepoimentos>div:nth-child(1) {
-    width: 100%;
-    max-height: 400px;
-    /* Adicionar limite */
+    width: auto;
+    margin: auto;
+    max-width: 300px;
     overflow: hidden;
   }
 
@@ -106,16 +98,14 @@
     width: 100%;
     height: auto;
     max-height: 400px;
-    /* Reduzir altura máxima */
     object-fit: cover;
+    object-position: top;
   }
 
   .containerImagemDepoimentos>div:nth-child(2) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Reduzir ainda mais */
     gap: 20px;
     padding-top: 0;
-    /* Remover padding-top */
   }
 }
 
@@ -123,12 +113,10 @@
 @media (max-width: 480px) {
   .secaoDepoimentos {
     padding: 30px 10px;
-    /* Reduzir ainda mais */
   }
 
   .conteudoDepoimentos {
     padding: 0 5px;
-    /* Reduzir padding */
   }
 
   .apresentacaoSecao h2 {
@@ -142,13 +130,11 @@
   .containerImagemDepoimentos {
     gap: 20px;
     padding: 15px;
-    /* Reduzir padding significativamente */
     overflow: hidden;
   }
 
   .containerImagemDepoimentos>div:nth-child(1) {
     max-height: 300px;
-    /* Reduzir altura máxima */
     overflow: hidden;
   }
 
@@ -156,13 +142,11 @@
     width: 100%;
     height: auto;
     max-height: 300px;
-    /* Altura muito menor para mobile */
     object-fit: cover;
   }
 
   .containerImagemDepoimentos>div:nth-child(2) {
     grid-template-columns: 1fr;
-    /* Apenas 1 coluna no mobile */
     gap: 15px;
   }
 }
