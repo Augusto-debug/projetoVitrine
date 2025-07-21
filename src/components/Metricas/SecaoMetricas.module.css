@@ -44,7 +44,8 @@
 
 
 .conteudoMetricas {
-    width: 1200px;
+    max-width: 1200px; /* Mudança: de width para max-width */
+    width: 100%; /* Adicionar */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -111,6 +112,11 @@
         padding: 60px 15px;
     }
 
+    .conteudoMetricas {
+        max-width: 100%; /* Adicionar */
+        padding: 0 10px; /* Adicionar */
+    }
+
     .conteudoMetricas h2 {
         font-size: 2rem;
     }
@@ -132,10 +138,20 @@
         min-height: 250px;
         padding: 15px;
     }
+
+    .metricasGrid {
+        grid-template-columns: repeat(2, 1fr); /* Garantir 2 colunas em tablet */
+        gap: 10px;
+        width: 100%;
+    }
 }
 
 /* Responsividade para mobile */
 @media (max-width: 480px) {
+    .conteudoMetricas {
+        padding: 0 5px; /* Adicionar */
+    }
+
     .conteudoMetricas h2 {
         font-size: 1.75rem;
     }
@@ -146,11 +162,18 @@
 
     .metricasTipoUm,
     .metricasTipoDois {
-        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%; /* Mudança */
         height: auto;
         min-height: 200px;
         padding: 12px;
         gap: 15px;
+    }
+
+    .metricasGrid {
+        grid-template-columns: 1fr; /* 1 coluna em mobile */
+        gap: 10px;
+        width: 100%;
     }
 
     .containerMetricas {
