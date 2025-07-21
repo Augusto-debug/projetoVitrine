@@ -18,21 +18,19 @@
     color: #7c0000;
 }
 
-
 .metricaUnica>span {
     background-color: #7D0000;
     color: white;
     width: 60%;
     padding: 10px;
     border-radius: 8px;
-
+    text-align: center; /* Adicionar para centralizar texto */
 }
 
 .metricaUnica>p {
     margin-top: 10px;
     font-size: 0.80rem;
     font-style: italic;
-    
     text-align: center;
     margin-top: 10px;
 }
@@ -42,7 +40,7 @@
     .metricaUnica {
         width: 200px;
         height: 130px;
-        margin: 10px;
+        margin: 10px auto; /* Adicionar auto para centralizar */
         padding: 8px;
     }
     
@@ -61,7 +59,7 @@
         width: 100%;
         max-width: 280px;
         height: 120px;
-        margin: 5px 0;
+        margin: 5px auto; /* Mudança: de "5px 0" para "5px auto" para centralizar */
         padding: 8px;
     }
     
