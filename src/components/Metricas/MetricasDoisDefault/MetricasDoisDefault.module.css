@@ -29,7 +29,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 16px;
+  font-size: 1.125em;
   font-weight: bold;
   transform: translate(-50%, -50%);
   color: #7c0000;
@@ -40,19 +40,20 @@
   .containerAlcance {
     width: 200px;
     height: 130px;
-    margin: 10px auto; /* Mudança: adicionar auto para centralizar */
+    margin: 10px auto;
+    /* Mudança: adicionar auto para centralizar */
     padding: 8px;
   }
-  
+
   .containerAlcance h4 {
     font-size: 14px;
   }
-  
+
   .wrapper {
     width: 80px;
     height: 80px;
   }
-  
+
   .valorCentro {
     font-size: 14px;
   }
@@ -64,19 +65,20 @@
     width: 100%;
     max-width: 280px;
     height: 120px;
-    margin: 5px auto; /* Mudança: de "5px 0" para "5px auto" para centralizar */
+    margin: 5px auto;
+    /* Mudança: de "5px 0" para "5px auto" para centralizar */
     padding: 8px;
   }
-  
+
   .containerAlcance h4 {
     font-size: 13px;
   }
-  
+
   .wrapper {
     width: 70px;
     height: 70px;
   }
-  
+
   .valorCentro {
     font-size: 13px;
   }
