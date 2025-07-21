@@ -40,15 +40,15 @@
 }
 
 .hero-text h2 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.5rem;
-  margin: 0 0 15px 0;
+  margin-bottom: 12px;
   color: #7D0000;
 }
 
 .hero-text p.hero-description {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.125rem;
   margin-bottom: 30px;
   color: #333;
 }

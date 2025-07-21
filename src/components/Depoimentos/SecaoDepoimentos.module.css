@@ -19,15 +19,18 @@
   position: relative;
 }
 
-.secaoDepoimentos h2 {
+.apresentacaoSecao {
+  text-align: center;
+}
+
+.apresentacaoSecao h2 {
   font-size: 2.5rem;
   color: #FFFFFF;
   font-weight: 800;
   margin-bottom: 12px;
-  text-align: center;
 }
 
-.secaoDepoimentos p {
+.apresentacaoSecao p {
   font-size: 1.125rem;
   color: #e2e8f0;
   max-width: 680px;
@@ -35,7 +38,7 @@
   text-align: center;
 }
 
-.secaoDepoimentos .textoTituloDepoimento {
+.apresentacaoSecao .textoTituloDepoimento {
   color: #e2e8f0;
 }
 
@@ -88,11 +91,11 @@
     padding: 0 10px; /* Adicionar padding interno */
   }
 
-  .secaoDepoimentos h2 {
+  .apresentacaoSecao h2 {
     font-size: 2rem;
   }
 
-  .secaoDepoimentos p {
+  .apresentacaoSecao p {
     font-size: 1rem;
   }
 
@@ -133,11 +136,11 @@
     padding: 0 5px; /* Reduzir padding */
   }
 
-  .secaoDepoimentos h2 {
+  .apresentacaoSecao h2 {
     font-size: 1.75rem;
   }
 
-  .secaoDepoimentos p {
+  .apresentacaoSecao p {
     font-size: 0.95rem;
   }
 

@@ -67,7 +67,7 @@
 .contactForm p {
     font-size: 1.125rem;
     color: #333;
-    margin-bottom: 15px;
+    margin: 0;
     width: 100%;
     text-align: left;
 }

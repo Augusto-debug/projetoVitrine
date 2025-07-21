@@ -40,8 +40,10 @@ const SecaoMetricas = () => {
   return (
     <section id="metricas" className={style.secaoMetricas} ref={sectionRef}>
       <div className={style.conteudoMetricas}>
-        <h2>Nossa força no Instagram</h2>
-        <p>Uma audiência que gera resultados para sua marca</p>
+        <div className={style.apresentacaoSecaoMetricas}>
+          <h2>Nossa força no Instagram</h2>
+          <p>Uma audiência que gera resultados para sua marca</p>
+        </div>
 
         <div className={style.containerMetricas}>
           <div className={style.metricasTipoUm}>
