@@ -36,43 +36,44 @@
 }
 
 /* Responsividade para tablets */
+
 @media (max-width: 768px) {
     .metricaUnica {
         width: 200px;
         height: 130px;
-        margin: 10px auto; /* Adicionar auto para centralizar */
+        margin: 10px auto;
         padding: 8px;
     }
     
     .metricaUnica h4 {
-        font-size: 14px;
+        /* font-size: 14px; */
     }
     
     .metricaUnica > p {
-        font-size: 0.75rem;
+        /* font-size: 0.75rem; */
     }
 }
 
-/* Responsividade para mobile */
+
 @media (max-width: 480px) {
     .metricaUnica {
         width: 100%;
         max-width: 280px;
         height: 120px;
-        margin: 5px auto; /* Mudança: de "5px 0" para "5px auto" para centralizar */
+        margin: 5px auto;
         padding: 8px;
     }
     
-    .metricaUnica h4 {
+    /* .metricaUnica h4 {
         font-size: 13px;
-    }
+    } */
     
     .metricaUnica > span {
         padding: 8px;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
     
     .metricaUnica > p {
-        font-size: 0.7rem;
+        /* font-size: 0.7rem; */
     }
 }

@@ -46,7 +46,7 @@
   }
 
   .containerAlcance h4 {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   .wrapper {
@@ -55,7 +55,7 @@
   }
 
   .valorCentro {
-    font-size: 14px;
+    /* font-size: 16px; */
   }
 }
 
@@ -71,7 +71,7 @@
   }
 
   .containerAlcance h4 {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
 
   .wrapper {
@@ -80,6 +80,6 @@
   }
 
   .valorCentro {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
 }
