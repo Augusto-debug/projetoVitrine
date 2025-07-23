@@ -45,13 +45,13 @@
         padding: 8px;
     }
     
-    .metricaUnica h4 {
-        /* font-size: 14px; */
+    /* .metricaUnica h4 {
+        font-size: 14px;
     }
     
     .metricaUnica > p {
-        /* font-size: 0.75rem; */
-    }
+        font-size: 0.75rem;
+    } */
 }
 
 
@@ -73,7 +73,7 @@
         /* font-size: 14px; */
     }
     
-    .metricaUnica > p {
-        /* font-size: 0.7rem; */
-    }
+    /* .metricaUnica > p {
+        font-size: 0.7rem;
+    } */
 }
