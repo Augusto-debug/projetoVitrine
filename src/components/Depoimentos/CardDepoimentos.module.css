@@ -7,7 +7,6 @@
   padding: 16px 20px;
   width: 100%;
   margin: 0;
-  min-width: 0;
   flex-shrink: 1;
   box-sizing: border-box; 
   overflow: hidden; 
@@ -17,14 +16,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px;
+  margin-bottom: 15px;
   flex-shrink: 0;
   gap: 12px;
 }
 
 .cardDepoimentos h4 {
   font-weight: bold;
-  margin-bottom: 10px;
   word-wrap: break-word;
   color: rgb(34, 33, 33);
 }
@@ -42,7 +40,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: justify;
-  /* padding: 10px; */
 
 }
 
@@ -64,14 +61,14 @@
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
-  .cardDepoimentos {
+  /* .cardDepoimentos {
     padding: 14px 18px;
     margin: 0;
     width: 100%;
     height: auto;
     min-height: 160px;
-    max-width: 100%; /* Adicionar */
-  }
+    max-width: 100%;
+  } */
 
   .cardDepoimentos div:nth-child(1) {
     margin: 0 0 12px 0;
@@ -94,13 +91,13 @@
 /* Responsividade para mobile */
 @media (max-width: 480px) {
   
-  .cardDepoimentos {
-    /* padding: 12px 16px; */
+  /* .cardDepoimentos {
+    padding: 12px 16px;
     margin: 0;
     width: 100%;
     max-width: 100%;
     gap: 0px;
-  }
+  } */
 
   .cardDepoimentos div:nth-child(1) {
     justify-content: center;
@@ -111,13 +108,13 @@
     /* height: 40px; */
   }
 
-  .cardDepoimentos div:nth-child(2) {
+  /* .cardDepoimentos div:nth-child(2) {
     padding: 0;
     align-items: center;
     text-align: center;
     margin: 0px;
     gap: 0px;
-  }
+  } */
 
 
 

@@ -1,6 +1,6 @@
 export const depoimentos = [
   {
-    depoimento: "O post gerou um pico de acessos. A parceria perfeita para quem busca visibilidade e vendas!",
+    depoimento: "O post gerou um pico de acessos. A parceria perfeita para quem busca visibilidade!",
     nome: "Ana Silva",
     avatar: "/ana.jpeg"
   },
@@ -10,7 +10,7 @@ export const depoimentos = [
     avatar: "/joao.jpeg"
   },
   {
-    depoimento: "Recebemos dezenas de novos clientes . Recomendo fortemente!",
+    depoimento: "Recebemos dezenas de novos clientes. Recomendo fortemente!",
     nome: "Ana Souza",
     avatar: "/anasouza.jpeg"
   },
