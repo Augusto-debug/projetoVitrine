@@ -9,7 +9,7 @@ const Parceiros = () => {
       <div className={style.partnersContent}>
         <div className={style.apresentacaoSecao}>
           <Apresentacao
-            tituloSecao="Destaques da Vitrine"
+            tituloSecao="Destaques da vitrine"
             paragrafoSecao="Os melhores parceiros estão aqui — e a sua marca pode ser a próxima a brilhar"
           />
         </div>
