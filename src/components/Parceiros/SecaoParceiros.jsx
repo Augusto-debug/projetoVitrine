@@ -18,7 +18,7 @@ function SecaoParceiros() {
       <div>
         <div className={styles.apresentacaoSecao}>
           <Apresentacao
-            tituloSecao="Parceiros que fazem a diferença"
+            tituloSecao="Quem já confiou na gente"
             paragrafoSecao="Conheça mais as marcas que acreditam no meu trabalho"
           />
         </div>

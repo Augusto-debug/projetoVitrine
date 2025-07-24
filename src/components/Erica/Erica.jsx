@@ -18,7 +18,7 @@ const Erica = () => {
         <section id="erica" className={styles.ericaContainer}>
             <div className={styles.ericaInner}>
                 <Apresentacao
-                    tituloSecao="A Essência da Érica"
+                    tituloSecao="A essência da Érica"
                     paragrafoSecao="Marketing com alma, propósito e presença"
                 />
                 <div className={styles.ericaContent}>

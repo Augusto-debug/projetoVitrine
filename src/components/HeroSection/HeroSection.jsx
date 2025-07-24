@@ -12,6 +12,10 @@ const HeroSection = () => {
     }
   };
 
+  const anoInicial = 2018;
+  const anoAtual = new Date().getFullYear();
+  const anosDeExperiencia = anoAtual - anoInicial;
+
   return (
     <section id="hero" className="hero-container">
       <div className="hero-content">
@@ -19,7 +23,7 @@ const HeroSection = () => {
           <h1>Vitrine Uberlândia</h1>
           <h2>Érica</h2>
           <p className="hero-description">
-            Desde 2018, impulsionando marcas, produtos e serviços em Uberlândia.
+            Há {anosDeExperiencia} {anosDeExperiencia === 1 ? "ano" : "anos"}, impulsionando marcas, produtos e serviços em Uberlândia.
           </p>
           <div className="hero-actions">
             <button
